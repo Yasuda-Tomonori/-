@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      padding: 0 0 100px 0;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: url('ボックスカルバート2.png') center/cover no-repeat;
+      height: 60vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 3.75rem;
+      font-family: 'Kiwi Maru', serif;
+    }
+    header a {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    nav {
+      background: rgb(206, 230, 193);
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: #004d40;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #18bc9c;
+    }
+    section {
+      padding: 60px 30px;
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    h2 {
+      border-left: 5px solid #007BFF;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-item {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      text-align: center;
+    }
+    .product-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .product-item h3 {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+    .strengths {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .strength {
+      flex: 1;
+      background: #e9ecef;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background: rgb(206, 230, 193);
+      color: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+      }
+      .strengths, .product-gallery {
+        flex-direction: column;
+        display: flex;
+      }
+      .product-item img {
+        height: auto;
+      }
+      section {
+        padding: 30px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>藤岡コンクリート工業株式会社</h1>
+    <p style="font-size: 1.5rem;">確かな品質で社会を支えるコンクリート二次製品</p>
+    <a href="#contact">お問い合わせはこちら</a>
+  </header>
+
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#services">製品情報</a>
+    <a href="#strength">強み・実績</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <section id="about">
+    <h2>会社概要</h2>
+    <p><strong>会社名：</strong>藤岡コンクリート工業株式会社</p>
+    <p><strong>所在地：</strong>群馬県藤岡市小林735</p>
+    <p><strong>代表者：</strong>代表取締役 竹市 孝和</p>
+    <p><strong>創業：</strong>1967年12月</p>
+    <p><strong>理念：</strong>地域に根ざし、堅実な製品で社会を支える</p>
+    <p><strong>事業内容：</strong>コンクリート二次製品製造・仕入販売</p>
+    <p><strong>備考：</strong>日本産業規格　適合性認証 認証番号 TC0307461　ISO9001取得済み</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13122.479230706366!2d139.0726682!3d36.2413626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601eea5aae3b82e3%3A0x474a667e073b097e!2z6Jek5bKh44Kz44Oz44Kv44Oq44O844OI5bel5qWt77yI5qCq77yJ!5e0!3m2!1sja!2sjp!4v1715940000000!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  
+  <section id="greeting">
+  <h2>ご挨拶</h2>
+  
+  <div>
+    <div style="flex: 1;">
+      <p style="font-weight: bold; font-size: 2rem;">コンクリート製品を通じて<br>社会に貢献する。</p>
+      <p>
+        当社は昭和47年の創業以来「誠実なものづくりで社会を支える」を信念に、コンクリート製品の製造、販売を行ってまいりました。特に、社員とその家族の安心、顧客満足の追求、地域社会への貢献を大切にしながら事業を展開しております。
+      </p>
+      <p>
+  
+<div style="text-align: right; margin-top: 20px;">
+  <img src="社長.png" alt="代表取締役 竹市 孝和" style="max-width: 450px; height: auto; border-radius: 8px;"><br>
+  <span style="display: inline-block; margin-top: 10px; font-weight: bold; font-size: 2rem;">代表取締役　竹市 孝和</span>
+</div>
+
+
+    </div>
+  </div>
+    </div>
+    
+  </div>
+  </section>
+
+  <section id="services">
+    <h2>取扱い製品</h2>
+    <div class="product-gallery">
+      <div class="product-item">
+        <img src="U字溝.jpg" alt="U字溝">
+        
+       <h3>U字溝</h3>
+<p>高い排水性能と耐久性を備えたU字溝は、インフラ整備や都市開発に欠かせない製品です。</p>
+      </div>
+      <div class="product-item">
+        <img src="ヨウヘキ.png" alt="L型擁壁">
+        <h3>L型擁壁</h3>
+<p>土圧や水圧をしっかり受け止める構造で、道路や宅地の法面保護など幅広い現場に対応できる擁壁製品です。</p>
+      </div>
+      <div class="product-item">
+        <img src="マンホール.png" alt="マンホール部材">
+        <h3>マンホール部材</h3>
+<p>地下インフラ整備に欠かせない部材で、高い密閉性と耐久性を兼ね備え、上下水道・電線などの保守点検に対応します。</p>
+      </div>
+      <div class="product-item">
+        <img src="ブロック.png" alt="境界ブロック">
+        <h3>境界ブロック</h3>
+<p>敷地や道路の境界を明確に区切るための構造材で、設置が容易かつ耐久性に優れ、景観にも配慮した製品です。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="strength">
+    <h2>強み・実績</h2>
+    <div class="strengths">
+      <div class="strength">
+        <img src="短納期.png" alt="短納期対応アイコン" style="height: 200px;"><br>
+        <h3>短納期対応</h3>
+<p>当社では自社工場を活用することで、受注から製造・納品までを一貫して行える柔軟な体制を整えており、急なご依頼や納期の短縮にも迅速かつ的確に対応することが可能です。</p>
+      </div>
+      <div class="strength">
+        <img src="創業.png" alt="創業アイコン" style="height: 200px;"><br>
+        <h3>創業50年以上</h3>
+<p>1967年の創業以来、地域に根ざした事業展開を行い、着実な実績と信頼を築いてまいりました。長年にわたる安定した経営基盤のもと、これからも地域社会の発展に貢献してまいります。</p>
+      </div>
+      <div class="strength">
+        <img src="取引先.png" alt="取引先アイコン" style="height: 200px;"><br>
+        <h3>取引先300社以上</h3>
+<p>これまでに官公庁や大手建設会社を中心に、300社以上との取引実績を積み重ねてきました。豊富な経験と確かな品質で信頼をいただいており、今後もお客様のニーズに応える製品とサービスを提供してまいります。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>電話：0274-22-1038</p>
+    <p>FAX：0274-22-1091</p>
+    <form action="mailto:info@fujioka-concrete.co.jp" method="POST">
+      <input type="text" name="name" placeholder="お名前" required>
+      <input type="email" name="email" placeholder="メールアドレス" required>
+      <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>藤岡コンクリート工業株式会社｜〒375-0021 群馬県藤岡市小林735｜TEL: 0274-22-1038</p>
+    <p>&copy; 2025 FUJIOKA CONCRETE INDUSTRIES CO., LTD. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
