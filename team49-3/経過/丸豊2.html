@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>有限会社丸豊鋼材店</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #f5f7f9;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      animation: slideImages 6s infinite;
+      z-index: -1;
+    }
+    @keyframes slideImages {
+      0% { background-image: url('高速道路.png'); }
+      33% { background-image: url('管.png'); }
+      66% { background-image: url('政策.png'); }
+      100% { background-image: url('高速道路.png'); }
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+    header a {
+      background: #ffc107;
+      color: #333;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    header a:hover {
+      background: #e0a800;
+    }
+    nav {
+      background: white;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #3e4c59;
+      font-weight: bold;
+    }
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h2 {
+      color: #3e4c59;
+      border-left: 6px solid #ffc107;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .badge {
+      background: #fff3cd;
+      color: #856404;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    button {
+      background: #ffc107;
+      color: #333;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e0a800;
+    }
+    .accordion {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .accordion h3 {
+      margin: 0;
+      padding: 15px;
+      background: #eee;
+      cursor: pointer;
+    }
+    .accordion .content {
+      display: none;
+      padding: 15px;
+      border-top: 1px solid #ccc;
+    }
+    .accordion.open .content {
+      display: block;
+    }
+    footer {
+      background: #3e4c59;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-bg"></div>
+    <h1>有限会社丸豊鋼材店</h1>
+    <p>各種鋼材・土木資材の販売と工事請負で地域に貢献</p>
+    <a href="#contact">お問い合わせ</a>
+  </header>
+
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#products">事業内容</a>
+    <a href="#strength">強み・実績</a>
+    <a href="#faq">よくある質問</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>会社概要</h2>
+      <p><strong>会社名：</strong>有限会社丸豊鋼材店</p>
+      <p><strong>所在地：</strong>富山県魚津市大光寺1991-1</p>
+      <p><strong>代表者：</strong>吉森 裕晃</p>
+      <p><strong>創業：</strong>1966年9月1日</p>
+      <p><strong>理念：</strong>地域とともに歩み、信頼される企業を目指します。</p>
+      <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </section>
+
+    <section id="products">
+      <h2>事業内容</h2>
+      <ul>
+        <li>形鋼（H形鋼・アングル・チャンネル等）販売</li>
+        <li>鋼管（コラム・STK・SGP等）販売</li>
+        <li>鋼板・棒鋼の供給</li>
+        <li>各種土木資材の販売</li>
+        <li>現場対応・加工・運搬業務</li>
+      </ul>
+    </section>
+
+    <section id="strength">
+      <h2>当社の強み</h2>
+      <div class="badges">
+        <div class="badge">創業50年以上の実績</div>
+        <div class="badge">幅広い鋼材ラインナップ</div>
+        <div class="badge">地域密着・迅速対応</div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>よくある質問</h2>
+      <div class="accordion">
+        <h3>Q. 小ロットでも対応可能ですか？</h3>
+        <div class="content">A. はい、1本からでも対応いたします。お気軽にご相談ください。</div>
+      </div>
+      <div class="accordion">
+        <h3>Q. 加工もお願いできますか？</h3>
+        <div class="content">A. 簡易な切断・穴あけ等対応可能です。詳細はお問い合わせください。</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <form>
+        <input type="text" name="name" placeholder="お名前" required>
+        <input type="email" name="email" placeholder="メールアドレス" required>
+        <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+        <button type="submit">送信</button>
+      </form>
+      <p style="margin-top: 10px;">またはお電話で：<strong>0765-24-1477</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>有限会社丸豊鋼材店 | 富山県魚津市大光寺1991-1 | TEL: 0765-24-1477</p>
+    <p>&copy; 2025 Marutoyo Steel Co., Ltd. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.accordion h3').forEach(header => {
+      header.addEventListener('click', () => {
+        const box = header.parentElement;
+        box.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
