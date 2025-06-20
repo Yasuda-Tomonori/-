@@ -1,0 +1,117 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>会社概要 - 藤房商店</title>
+  <style>
+    body {
+      font-family: "Yu Gothic", "Meiryo", sans-serif;
+      margin: 0;
+      background-color: #f8f1e1;
+      color: #3a2e23;
+    }
+    header {
+      background-color: #5c3d28;
+      color: #fff8e1;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 3px;
+    }
+    nav {
+      background-color: #ede2cd;
+      padding: 12px 0;
+      border-bottom: 3px solid #d3b98f;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5c3d28;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    .section {
+      padding: 30px 20px;
+      max-width: 960px;
+      margin: auto;
+      background-color: #fffdf7;
+    }
+    .ceo-message {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+    .ceo-message img {
+      width: 300px;
+      border-radius: 10px;
+    }
+    .ceo-text {
+      flex: 1;
+    }
+    .ceo-text h2 {
+      font-size: 1.5em;
+      border-left: 6px solid #c49a6c;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+    .ceo-text p {
+      font-size: 1em;
+      line-height: 1.8;
+    }
+    footer {
+      background-color: #5c3d28;
+      color: #fff8e1;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 600px) {
+      .ceo-message {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .ceo-message img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>会社概要</h1>
+  </header>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="products.html">製品紹介</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="about.html">会社概要</a>
+  </nav>
+  <div class="section">
+    <div class="ceo-message">
+      <img src="ceo_portrait.png" alt="代表者の写真">
+      <div class="ceo-text">
+        <h2>ごあいさつ</h2>
+        <p>
+          藤房商店は、創業以来一貫して「まじめに、ていねいに、誠実に」をモットーに、地域の皆様とともに歩んでまいりました。<br>
+          時代が移り変わっても、ものづくりを支える基本は変わりません。<br>
+          私たちは、信頼される商品・対応を通じて、お客様の“当たり前の安心”を支え続けてまいります。<br>
+          今後とも変わらぬご愛顧のほど、よろしくお願い申し上げます。
+        </p>
+        <p style="margin-top: 1em; font-weight: bold;">代表取締役　藤房 裕信</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 有限会社 藤房商店</p>
+  </footer>
+</body>
+</html>

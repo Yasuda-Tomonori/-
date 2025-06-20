@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>有限会社 藤房商店</title>
+  <style>
+    body {
+      font-family: "Yu Gothic", "Meiryo", sans-serif;
+      margin: 0;
+      background-color: #f8f1e1;
+      color: #3a2e23;
+    }
+
+    /* ヘッダー画像 */
+    .hero-header {
+      position: relative;
+      background-image: url('fujifusa_building.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-header .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .hero-header .hero-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-header h1 {
+      font-size: 2.4em;
+      margin-bottom: 10px;
+    }
+
+    .hero-header p {
+      font-size: 1.1em;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #ede2cd;
+      padding: 12px 0;
+      border-bottom: 3px solid #d3b98f;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5c3d28;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fffdf7;
+      border-bottom: 1px dashed #c2b28f;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      color: #3a2e23;
+      border-left: 6px solid #c49a6c;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .map {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: #5c3d28;
+      color: #fff8e1;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    #contact-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #c49a6c;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #aaa;
+      background-color: #fffaf0;
+    }
+
+    button {
+      background-color: #5c3d28;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #7a543c;
+    }
+
+    @media screen and (max-width: 600px) {
+      .hero-header {
+        height: 180px;
+      }
+
+      .hero-header h1 {
+        font-size: 1.5em;
+      }
+
+      .hero-header p {
+        font-size: 0.95em;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero-header">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>有限会社 藤房商店</h1>
+      <p>創業150年超 ─ 山口県長門市の鋼材・船具・塗料商</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="products.html">製品紹介</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="about.html">会社概要</a>
+  </nav>
+
+  <div class="section">
+    <h2>会社概要</h2>
+    <p><strong>所在地：</strong>山口県長門市東深川中山210-1</p>
+    <p><strong>電話番号：</strong>0837-22-5111</p>
+    <p><strong>創業：</strong>1875年6月（設立1953年5月）</p>
+    <p><strong>資本金：</strong>5,000千円</p>
+    <p><strong>従業員数：</strong>7名</p>
+  </div>
+
+  <div class="section">
+    <h2>代表者</h2>
+    <p><strong>氏名：</strong>藤井 陽一郎</p>
+    <p><strong>最終学歴：</strong>近畿大学 卒業</p>
+    <p><strong>趣味：</strong>囲碁</p>
+  </div>
+
+  <div class="section">
+    <h2>取扱製品カテゴリ（抜粋）</h2>
+    <ul>
+      <li>鋼材・ステンレス資材</li>
+      <li>電動工具・建設機器</li>
+      <li>ベルト・ベアリング・ボルト</li>
+      <li>配管資材・水道用品</li>
+      <li>ペイント・船具・ロープ</li>
+    </ul>
+    <p><a href="products.html">▶ 製品紹介はこちら</a></p>
+  </div>
+
+  <div class="section">
+    <h2>アクセス</h2>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=山口県長門市東深川中山210-1&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>お問い合わせ</h2>
+    <form>
+      <input type="text" name="name" placeholder="お名前">
+      <input type="email" name="email" placeholder="メールアドレス">
+      <textarea name="message" placeholder="お問い合わせ内容"></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </div>
+
+  <a id="contact-link" href="#contact">📩 お問い合わせ</a>
+
+  <footer>
+    <p>&copy; 2025 有限会社 藤房商店</p>
+  </footer>
+
+</body>
+</html>

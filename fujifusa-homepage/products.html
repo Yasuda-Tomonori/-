@@ -1,0 +1,148 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>製品紹介 - 藤房商店</title>
+  <style>
+    body {
+      font-family: "Yu Gothic", "Meiryo", sans-serif;
+      margin: 0;
+      background-color: #f8f1e1;
+      color: #3a2e23;
+    }
+    header {
+      background-color: #5c3d28;
+      color: #fff8e1;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 3px;
+    }
+    nav {
+      background-color: #ede2cd;
+      padding: 12px 0;
+      border-bottom: 3px solid #d3b98f;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5c3d28;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    .section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fffdf7;
+    }
+    h2 {
+      font-size: 1.6em;
+      color: #3a2e23;
+      border-left: 6px solid #c49a6c;
+      padding-left: 10px;
+      margin-bottom: 25px;
+    }
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .product-block {
+      width: 280px;
+      background-color: #fefcf5;
+      border: 2px solid #cdb89e;
+      border-radius: 12px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+    .product-block:hover {
+      transform: scale(1.03);
+    }
+    .product-block img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product-block p {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #5c3d28;
+    }
+    footer {
+      background-color: #5c3d28;
+      color: #fff8e1;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 600px) {
+      .product-block {
+        width: 90%;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>製品紹介</h1>
+    <p>創業150年の信頼と品質。取り扱い製品をご覧ください</p>
+  </header>
+ <nav>
+  <a href="index.html">ホーム</a>
+  <a href="products.html">製品紹介</a>
+  <a href="contact.html">お問い合わせ</a>
+  <a href="about.html">会社概要</a>
+</nav>
+
+  <div class="section">
+    <h2>主要カテゴリ</h2>
+    <div class="product-gallery">
+      <a class="product-block" href="kouzai.html">
+        <img src="kouzai.png" alt="鋼材・ステンレス資材">
+        <p>鋼材・ステンレス資材</p>
+      </a>
+      <a class="product-block" href="dendou.html">
+        <img src="dendou.png" alt="電動工具・建設機器">
+        <p>電動工具・建設機器</p>
+      </a>
+      <a class="product-block" href="belt_bolt.html">
+        <img src="belt_bolt.png" alt="ベルト・ベアリング・ボルト">
+        <p>ベルト・ベアリング・ボルト</p>
+      </a>
+      <a class="product-block" href="haikan.html">
+        <img src="haikan.png" alt="配管資材・水道用品">
+        <p>配管資材・水道用品</p>
+      </a>
+      <a class="product-block" href="paint_rope.html">
+        <img src="paint_rope.png" alt="ペイント・船具・ロープ">
+        <p>ペイント・船具・ロープ</p>
+      </a>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 有限会社 藤房商店</p>
+  </footer>
+</body>
+</html>
