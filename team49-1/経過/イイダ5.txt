@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社イイダ</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #3a4d63;
+      --accent-color: #f0f4f8;
+      --text-color: #2e2e2e;
+      --border-color: #ccc;
+      --hover-color: #6c8ba4;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', 'EB Garamond', serif;
+      background: white;
+      color: var(--text-color);
+    }
+    .hero {
+      background: linear-gradient(135deg, #e9eff5, #dbe3eb);
+      color: var(--main-color);
+      padding: 120px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3.2em;
+      font-family: 'EB Garamond', serif;
+      margin: 0;
+      animation: fadeInDown 1s ease-out;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      animation: fadeInUp 1.2s ease-out;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: white;
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 0;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: var(--main-color);
+      font-weight: bold;
+      font-size: 1.05em;
+      margin: 0 18px;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    nav button:hover,
+    nav button.active {
+      color: var(--hover-color);
+      border-bottom: 3px solid var(--hover-color);
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+    .tab {
+      display: none;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInTab 0.6s ease forwards;
+    }
+    .tab.active {
+      display: block;
+    }
+    h2 {
+      color: var(--main-color);
+      border-left: 6px solid var(--main-color);
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-size: 1.6em;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .grid { display: flex; flex-wrap: wrap; gap: 20px; }
+    .grid img, .story-img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    form {
+      display: grid;
+      gap: 16px;
+      max-width: 600px;
+    }
+    input, textarea {
+      padding: 14px;
+      font-size: 1em;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      background: #f9f9f9;
+    }
+    button.submit {
+      background: var(--main-color);
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button.submit:hover {
+      background: #2a3848;
+    }
+    footer {
+      background: var(--accent-color);
+      text-align: center;
+      padding: 30px 15px;
+      color: #555;
+      font-size: 0.9em;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInTab {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('nav button');
+      const tabs = document.querySelectorAll('.tab');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          tabs.forEach(t => t.classList.remove('active'));
+          btn.classList.add('active');
+          document.getElementById(btn.dataset.tab).classList.add('active');
+        });
+      });
+      // 初期表示
+      buttons[0].classList.add('active');
+      tabs[0].classList.add('active');
+    });
+  </script>
+</head>
+<body>
+  <div class="hero">
+    <h1>株式会社イイダ</h1>
+    <p>ねじ・工具・アンカーボルト製造の専門家</p>
+  </div>
+  <nav>
+    <button data-tab="about">会社概要</button>
+    <button data-tab="services">事業内容</button>
+    <button data-tab="strength">当社の特徴</button>
+    <button data-tab="story">社風・エピソード</button>
+    <button data-tab="contact">お問い合わせ</button>
+  </nav>
+  <main>
+    <section id="about" class="tab">
+      <h2>会社概要</h2>
+      <p><strong>会社名：</strong>株式会社イイダ</p>
+      <p><strong>所在地：</strong>富山市水橋恋塚55</p>
+      <p><strong>TEL：</strong>076-478-1161</p>
+      <p><strong>FAX：</strong>076-479-1139</p>
+      <p><strong>従業員数：</strong>6人</p>
+    </section>
+    <section id="services" class="tab">
+      <h2>事業内容</h2>
+      <ul>
+        <li>ねじ販売</li>
+        <li>機械工具の提供</li>
+        <li>アンカーボルト製造</li>
+      </ul>
+    </section>
+    <section id="strength" class="tab">
+      <h2>当社の特徴</h2>
+      <p>株式会社イイダは、社長の寡黙で落ち着いた人柄が象徴するような、静かで誠実な家族経営の会社です。</p>
+      <p>かつて一度終わった取引関係も、時間をかけて丁寧に築き直した結果、今では富山県内で最も重要なお客様の一社となっています。</p>
+    </section>
+    <section id="story" class="tab">
+      <h2>社風・エピソード</h2>
+      <p><strong>社長の印象：</strong>先代が急逝し、現在の社長は誠実に関係構築を進めているところです。寡黙ながらも、しっかり話を聞き、対応される姿勢が印象的です。</p>
+      <p><strong>営業の声：</strong>過去に当社が与信不安で取引を一度停止しましたが、その後再構築を経て、今では富山で最も重要な取引先となっています。</p>
+      <img src="画像5.png" alt="イイダ社長" class="story-img">
+    </section>
+    <section id="contact" class="tab">
+      <h2>お問い合わせ</h2>
+      <form>
+        <input type="text" name="name" placeholder="お名前" required>
+        <input type="email" name="email" placeholder="メールアドレス" required>
+        <textarea name="message" placeholder="お問い合わせ内容" rows="5" required></textarea>
+        <button type="submit" class="submit">送信</button>
+      </form>
+      <p style="margin-top: 10px;">またはお電話で：<strong>076-478-1161</strong></p>
+    </section>
+  </main>
+  <footer>
+    <p>株式会社イイダ | 富山市水橋恋塚55 | TEL: 076-478-1161</p>
+    <p>&copy; 2025 Iida Co., Ltd. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

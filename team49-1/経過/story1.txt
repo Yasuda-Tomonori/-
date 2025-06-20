@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>社風・エピソード | 株式会社イイダ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #333;
+      padding: 40px;
+    }
+    header {
+      background: #00538c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin-top: 20px;
+      line-height: 1.8;
+    }
+    img {
+      display: block;
+      margin-top: 30px;
+      max-width: 300px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #00538c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>社風・エピソード</h1>
+  </header>
+  <main>
+    <p><strong>社長の印象：</strong>先代が急逝し、現在の社長は誠実に関係構築を進めているところです。寡黙ながらも、しっかり話を聞き、対応される姿勢が印象的です。</p>
+    <p><strong>営業の声：</strong>過去に当社が与信不安で取引を一度停止しましたが、その後再構築を経て、今では富山で最も重要な取引先となっています。</p>
+    <img src="画像5.png" alt="イイダ社長">
+    <a href="index.html">← トップページへ戻る</a>
+  </main>
+</body>
+</html>
