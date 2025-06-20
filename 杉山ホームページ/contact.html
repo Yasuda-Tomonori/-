@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ</title>
+  <style>
+    body {
+      font-family: 'Noto Sans JP', 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+      color: #222;
+    }
+    .form-box {
+      background: #ffffffcc;
+      max-width: 640px;
+      margin: 4em auto;
+      padding: 3em;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #0066cc;
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+    label {
+      display: block;
+      margin: 1.2em 0 0.5em;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    button {
+      display: block;
+      margin: 2em auto 0;
+      padding: 0.8em 2em;
+      font-size: 1.1em;
+      background-color: #0099ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #007acc;
+    }
+</style>
+</head>
+<body>
+  <div class="form-box">
+    <h1>お問い合わせ</h1>
+    <form action="mailto:info@sugiyamabolt.com?subject=お問い合わせ" method="POST" enctype="text/plain">
+      <label for="name">お名前：</label>
+      <input type="text" id="name" name="お名前" required>
+      <label for="email">メールアドレス：</label>
+      <input type="email" id="email" name="メールアドレス" required>
+      <label for="message">お問い合わせ内容：</label>
+      <textarea id="message" name="お問い合わせ内容" rows="5" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </div>
+</body>
+</html>
