@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>株式会社安達金属</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #000;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* 背景動画 */
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    /* ヘッダー */
+    header {
+      height: 64px;
+      background-color: #001f3f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header div {
+      color: white;
+      font-size: 20pt;
+      font-weight: bold;
+    }
+
+    nav {
+      background: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #001f3f;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: #001f3f;
+      color: white;
+    }
+
+    .hero {
+      background: url('https://www.georhizome.co.jp/blog_soil/wp-content/uploads/metal_processing_factory.jpg') center/cover no-repeat;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 64px;
+      position: relative;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 40pt;
+      text-shadow: 2px 2px 6px #000;
+      opacity: 0;
+      animation: fadeInText 1s ease-out 1s forwards;
+    }
+
+    @keyframes fadeInText {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(30px); }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.9);
+      border-radius: 10px;
+    }
+
+    section + section {
+      margin-top: 60px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .equipment img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 60px;
+      z-index: 1;
+      position: relative;
+    }
+
+    ul { padding-left: 1em; }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero h1 {
+        font-size: 30pt;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 背景動画 -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="https://cdn.pixabay.com/video/2017/10/21/12543-239934681_large.mp4" type="video/mp4" />
+    お使いのブラウザはvideoタグをサポートしていません。
+  </video>
+
+  <!-- ヘッダー -->
+  <header>
+    <div>株式会社安達金属</div>
+    <nav>
+      <a href="#home">ホーム</a>
+      <a href="#business">業務内容</a>
+      <a href="#equipment">設備紹介</a>
+      <a href="#recruit">求人情報</a>
+      <a href="#company">会社案内</a>
+    </nav>
+  </header>
+
+  <!-- ヒーロー -->
+  <section id="home" class="hero">
+    <h1>長年の実績×鉄×確かな技術力</h1>
+  </section>
+
+  <!-- 4つの強み -->
+  <section>
+    <h2>4つの強み</h2>
+    <ul>
+      <li>長年の経験と実績</li>
+      <li>様々なご依頼に対応可能</li>
+      <li>豊富な設備の保有</li>
+      <li>短納期で小ロットから大量生産も可能</li>
+    </ul>
+  </section>
+
+  <!-- 業務内容 -->
+  <section id="business">
+    <h2>業務内容</h2>
+    <p>土木建築金物の製造販売</p>
+  </section>
+
+  <!-- 設備紹介 -->
+  <section id="equipment">
+    <h2>設備紹介</h2>
+    <div class="equipment grid">
+      <div>
+        <h3>三菱電機炭酸ガスレーザー加工機</h3>
+        <img src="https://www.adachikinzoku.co.jp/web/wp-content/uploads/2024/12/2IMG_1038-768x863.jpeg" alt="レーザー加工機">
+      </div>
+      <div>
+        <h3>アマダ35tプレス機</h3>
+        <img src="https://www.adachikinzoku.co.jp/web/wp-content/uploads/2022/04/gallery_01.png" alt="アマダプレス機">
+      </div>
+      <div>
+        <h3>コマツ35tプレス機</h3>
+        <img src="https://www.adachikinzoku.co.jp/web/wp-content/uploads/2022/04/gallery_02.png" alt="コマツプレス機35t">
+      </div>
+      <div>
+        <h3>コマツ45tプレス機</h3>
+        <img src="https://www.adachikinzoku.co.jp/web/wp-content/uploads/2022/04/gallery_03.png" alt="コマツプレス機45t">
+      </div>
+      <div>
+        <h3>コマツ60tプレス機</h3>
+        <img src="https://www.adachikinzoku.co.jp/web/wp-content/uploads/2022/04/gallery_04.png" alt="コマツプレス機60t">
+      </div>
+    </div>
+  </section>
+
+  <!-- 求人情報 -->
+  <section id="recruit">
+    <h2>求人情報</h2>
+    <p><strong>求める人材</strong></p>
+    <ul>
+      <li> 明るくて楽しく、やる気のある人</li>
+      <li> 自分自身の今までの経験を活かしたい人</li>
+      <li> プレス職人として、更に成長したい人</li>
+    </ul>
+    <p><strong>募集要項</strong></p>
+    <ul>
+      <li>仕事内容：プレス加工、溶接、検品</li>
+      <li>勤 務 地：〒519-2145 三重県松阪市射和町1214-1</li>
+      <li>給　　与：20万円/月～（要相談）</li>
+      <li>勤務時間：8時～17時</li>
+      <li>休　　日：完全週休2日制</li>
+    </ul>
+    <p>※未経験の方も、ぜひお問い合わせください。</p>
+  </section>
+
+  <!-- 会社案内 -->
+  <section id="company">
+    <h2>会社概要・アクセス</h2>
+    <ul>
+      <li>会  社  名  ：株式会社安達金属</li>
+      <li>所  在  地  ：〒519-2145 三重県松阪市射和町1214-1</li>
+      <li>代表取締役 ：安達 徳浩</li>
+      <li>電 話 番 号 ：0598-60-2081</li>
+      <li>資  本  金   ：300万円</li>
+      <li>設  立  日   ：平成27年10月</li>
+      <li>従 業 員 数 ：5名</li>
+      <li>事 業 内 容 ：土木建築金物製造販売</li>
+      <li>協 力 会 社 ：株式会社伸光、旭洋金属工業株式会社</li>
+    </ul>
+    <div style="margin-top:20px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11022.772707716947!2d136.53069916663904!3d34.51243869243437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600440596dc1a717%3A0xd0b6e0a5d7a77c44!2z5qCq5byP5Lya56S-IOWuiemBlOmHkeWxng!5e0!3m2!1sja!2sjp!4v1747456127717!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <form action="murayama@torq.co.jp" method="post" style="display: flex; flex-direction: column; gap: 20px;">
+      <div>
+        <label for="name">お名前：</label><br>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <div>
+        <label for="email">メールアドレス：</label><br>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <div>
+        <label for="message">お問い合わせ内容：</label><br>
+        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      </div>
+      <button type="submit" style="align-self: flex-start; padding: 10px 20px; background-color: #001f3f; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        送信
+      </button>
+    </form>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    株式会社安達金属｜〒519-2145 三重県松阪市射和町1214-1｜TEL: 0598-60-2081<br>
+    &copy; 2025 Adachi Kinzoku Co., Ltd.
+  </footer>
+</body>
+</html>
+
+
+
