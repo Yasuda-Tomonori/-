@@ -1,0 +1,226 @@
+:root {
+  --main-bg: #faf9f5;
+  --box-bg: #f5f7fb;
+  --primary: #6aa3c2;
+  --secondary: #ffd27d;
+  --text: #2f2f2f;
+  --font-main: 'M PLUS Rounded 1c', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--main-bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* ===============================
+   ヒーローセクション（トップ画像）
+================================ */
+.hero {
+  background: url('asahi-building.jpg') center center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  margin-top: 0.6rem;
+}
+
+/* ===============================
+   セクション
+================================ */
+section {
+  background-color: var(--box-bg);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+h2, h3 {
+  color: var(--primary);
+}
+
+h3 {
+  border-left: 4px solid var(--primary);
+  padding-left: 0.5rem;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+}
+
+ul li::before {
+  content: "•";
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+/* ===============================
+   営業品目リンク
+================================ */
+.link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   Google Map
+================================ */
+.map-container {
+  margin-top: 1rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* ===============================
+   お問い合わせフォーム
+================================ */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-family: var(--font-main);
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #5a8fb0;
+}
+
+/* ===============================
+   フッター
+================================ */
+footer {
+  background-color: #eceff3;
+  color: #555;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   固定お問い合わせボタン
+================================ */
+.contact-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary);
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: opacity 0.3s;
+  z-index: 999;
+}
+
+.contact-link:hover {
+  background: #5589a8;
+}
+
+.contact-link.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===============================
+   ギャラリー（products.html 用）
+================================ */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* ===============================
+   モバイル対応
+================================ */
+@media (max-width: 600px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .contact-link {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+}
