@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>有限会社西讃金属工業所</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f8f8; }
+    header {
+      background: url('header-image.png') no-repeat center center/cover;
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: left;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    nav { background: #1c2833; padding: 0.5rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    .hero {
+      background: url('hero-image.png') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2rem;
+    }
+    section { padding: 2rem; background: white; margin: 1rem auto; max-width: 900px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { color: #2d3e50; }
+    footer { background: #2d3e50; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      display: block;
+    }
+    .equipment-photo {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    .equipment-photo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .map-container {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 3rem;">有限会社西讃金属工業所</h1>
+  </header>
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#equipment">設備紹介</a>
+    <a href="#works">加工実績</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+  <div class="hero">
+    信頼と技術で支える金属加工のプロフェッショナル
+  </div>
+
+  <section id="about">
+    <h2>会社概要</h2>
+    <p><strong>代表者：</strong>社長 谷口友英</p>
+    <p><strong>所在地：</strong>〒766-0023 香川県仲多度郡まんのう町吉野2680-2</p>
+    <p><strong>電話番号：</strong>0877-79-2378　<strong>FAX：</strong>0877-79-2417</p>
+    <p>多種多様なプレス機を取り揃え、小ロットから量産対応まで柔軟に対応できる生産体制を整えています。熟練スタッフによる丁寧な加工、短納期対応、協力業者との連携による溶接や表面処理までの一貫対応が可能です。</p>
+
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.044731191433!2d133.86626491521247!3d34.21705878055482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546de03ac3e41f3%3A0x8c4bb11dd89a3b23!2z44CSNzY2LTAwMjMg6Iqm5aOr55yM5YyX5bGx5biC5a-65bed55Sw55S677yT77yU!5e0!3m2!1sja!2sjp!4v1715933508887!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section id="equipment">
+    <h2>保有設備一覧</h2>
+    <ul>
+      <li>ターボプレス：3台</li>
+      <li>150トンプレス：2台</li>   
+      <li>100トンプレス：1台</li> 
+      <li>80トンプレス：2台</li>
+      <li>45トンプレス：3台</li>
+      <li>35トンプレス：2台</li>
+      <li>ブレーキプレス：2台</li>   
+      <li>シャーリング機：1台</li>
+      <img src="スクリーンショット 2025-05-17 152730.png" />       
+    </ul>
+    <p>外注にて溶接・表面処理（メッキ・塗装など）にも対応可能です。</p>
+  </section>
+
+  <section id="works">
+    <h2>加工実績</h2>
+    <div class="gallery">
+      <img src="processed-7A00349F-CDB9-434D-8961-511883375EE0.jpeg" alt="バンドプレート" />
+      <img src="processed-60C315C7-2D44-45B1-883A-115B41758D49.jpeg" alt="角バンドプレート" />
+      <img src="processed-378E4D6B-78E5-4CCF-A95B-A21078CC2BC9.jpeg" alt="曲座金" />
+      <img src="processed-407116FC-88A1-4E20-A8F1-1D8F76DC32AB.jpeg" alt="トレイ用クランプ" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <form action="#" method="post" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+      <label>お名前：<br><input type="text" name="name" required style="width: 100%; padding: 0.5rem;" /></label>
+      <label>メールアドレス：<br><input type="email" name="email" required style="width: 100%; padding: 0.5rem;" /></label>
+      <label>お問い合わせ内容：<br><textarea name="message" rows="5" required style="width: 100%; padding: 0.5rem;"></textarea></label>
+      <button type="submit" style="padding: 0.75rem; background-color: #2d3e50; color: white; border: none; border-radius: 4px;">送信する</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 有限会社西讃金属工業所
+  </footer>
+</body>
+</html>
