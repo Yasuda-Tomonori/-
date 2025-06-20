@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>事業内容・製品サービス - 株式会社ナガノ</title>
+ 
+<style>
+body { 
+  font-family: sans-serif; 
+  line-height: 1.6; 
+  margin: 0; 
+  padding: 0; 
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+header, footer {
+  background: #1f2b38; 
+  color: white; 
+  text-align: center; 
+  padding: 1em 0;
+  flex-shrink: 0; 
+  box-sizing: border-box; 
+}
+nav a {
+  margin: 0 1em; 
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold;
+}
+section { 
+  padding: 2em; 
+  max-width: 800px; 
+  margin: auto; 
+  flex-grow: 1; 
+}
+.text-left { 
+  text-align: left; 
+}
+footer p { 
+  margin: 0.3em 0; 
+}
+.text-container {
+  text-align: left; 
+  max-width: 600px;
+  margin: 0 auto;
+}
+.text-container p, .text-container ul {
+  margin-bottom: 1em;
+  line-height: 1.6;
+  list-style: none; 
+  padding-left: 0; 
+}
+.text-container ul li {
+  margin-left: 1em;
+  list-style-type: none; 
+  padding-left: 0; 
+}
+img.president { /* services.htmlには不要ですが、共通スタイルとして維持 */
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+/* ヘッダーのスタイルを調整 (index.htmlと共通化) */
+header {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+header h1 {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; /* 中央揃えを追加 */
+  margin-bottom: 1em; 
+  font-size: 1.8em; 
+}
+.site-logo {
+  width: 50px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+/* ナビゲーションの共通スタイル */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 1em; 
+  padding: 0 1em; 
+}
+
+/* 画像スタイル */
+.product-image {
+  display: block; 
+  max-width: 600px; 
+  width: 100%; 
+  height: auto; 
+  margin: 2em auto; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+/* 複数の画像コンテナのスタイル */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 1.5em; 
+  margin-top: 2em;
+  text-align: center; 
+}
+
+.image-gallery img {
+  width: 250px; 
+  height: auto;
+  max-width: 100%; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* レスポンシブ対応のためのメディアクエリ (index.htmlと共通化) */
+@media (max-width: 768px) {
+  section {
+    padding: 1.5em 1em; 
+  }
+  header h1 {
+    font-size: 1.5em; 
+  }
+  .site-logo {
+    width: 40px; 
+  }
+  nav a {
+    margin: 0 0.5em; 
+    font-size: 0.9em; 
+  }
+  .product-image {
+    max-width: 100%; 
+  }
+  .image-gallery img {
+    width: 200px; 
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-top: 15px; /* index.htmlと共通 */
+    padding-bottom: 15px; /* index.htmlと共通 */
+  }
+  header h1 {
+    flex-direction: column; 
+    margin-bottom: 0.5em;
+  }
+  .site-logo {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  nav {
+    flex-direction: column; 
+    gap: 0.5em;
+    padding: 0.5em 1em;
+  }
+  nav a {
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+  }
+  nav a:last-child {
+    border-bottom: none; 
+  }
+  section {
+    padding: 1em; 
+  }
+  .text-container {
+    text-align: left; 
+  }
+  .product-image {
+    max-width: 95%; 
+    margin-top: 1.5em; 
+    margin-bottom: 1.5em;
+  }
+  .image-gallery {
+    gap: 1em; 
+  }
+  .image-gallery img {
+    width: 150px; 
+  }
+  footer p {
+    font-size: 0.8em; 
+  }
+}
+</style>
+</head>
+<body>
+<header>
+<h1><img src="images/naganologo.png" alt="サイトのロゴ" class="site-logo">株式会社ナガノ</h1>
+<nav>
+<a href="./index.html">ホーム</a>
+<a href="./about.html">会社概要</a>
+<a href="./services.html">事業内容</a>
+<a href="./strengths.html">強み・実績</a>
+<a href="./contact.html">お問い合わせ</a>
+</nav>
+</header>
+
+<section>
+ <h2>事業内容・製品サービス</h2>
+ <img src="images/seihinngazou.jpg" alt="製品画像" class="product-image">
+<div class="text-container"> 
+ <p>1. 一般ネジの販売（標準規格サイズ多数在庫）<br>
+ 当社では、JIS（日本産業規格）をはじめとする国内外の標準規格に対応した一般ネジを豊富に在庫しております。六角ボルト、ナット、小ねじ、タッピングねじ、さらにはステンレスや鉄、真鍮などの材質も取り揃え、幅広い用途に即対応が可能です。常時数千点に及ぶ在庫から、お客様のご要望に合った製品を迅速に出荷できる体制を整えております。製造業や建築業、修理・メンテナンス用途まで、様々な現場でのニーズにお応えします。</p>
+ <p>2. 特殊ネジ・特注加工品の取り扱い<br>
+ 一般流通していないサイズや形状の特殊ネジ、またはお客様の仕様に合わせた特注加工品も柔軟に対応しております。図面やサンプルからの製作、また材質指定や表面処理（メッキ、黒染め、パーカー処理など）にも対応可能です。少ロットから量産まで承っており、試作から本生産までスムーズに対応いたします。特殊な締結が必要な機器や設備において、他社で断られた案件でもぜひ一度ご相談ください。</p>
+ <p>3. 1本からのバラ売り対応<br>
+ 必要な数だけを購入したいというお客様の声にお応えし、当社では1本からのバラ売りに対応しています。「ほんの数本だけ欲しい」「試作で使ってみたい」といったニーズにもフレキシブルにお応えし、無駄なコストや在庫負担を削減できます。小ロット対応が可能なため、個人のお客様から小規模事業者、修理業者様まで幅広くご利用いただいております。必要な数量を、必要なタイミングで。そんな当たり前を大切にしています。</p>
+ <p>4. 緊急納品・即日対応<br>
+ 「今すぐ必要」「現場が止まってしまう」という緊急時にも迅速に対応いたします。午前中のご注文であれば即日出荷が可能な製品も多く、また近隣地域であれば当日配送の手配も可能です。在庫状況や輸送手段の調整にも柔軟に対応し、お客様の業務が滞らないよう最善を尽くします。特に製造業や建設業など、納期厳守が求められる現場では当社のスピード対応が高く評価されています。</p>
+ <p>5. 技術的な選定サポート<br>
+ 「どのネジを使えばよいか分からない」「強度計算や使用環境に合う材質を知りたい」など、専門的なご相談にも経験豊富なスタッフが丁寧に対応いたします。使用用途や環境条件、荷重のかかり方などをヒアリングし、最適なサイズ・形状・材質・表面処理をご提案。CAD図面や技術資料のご提供も可能です。お客様の製品やプロジェクトが安心して進行できるよう、締結部品の面から技術的にサポートいたします。</p>
+</div>
+ 
+ <div class="image-gallery"> 
+ <img src="images/shelf.jpg" alt="ネジ棚の様子">
+ <img src="images/weigh.jpg" alt="秤で計量する作業風景">
+ <img src="images/computer.jpg" alt="PC入力中の様子">
+ </div>
+</section>
+<footer>
+ <p>株式会社ナガノ</p>
+ <p>〒334-0074　埼玉県川口市江戸1-9-35</p>
+ <p>TEL: 048-282-8611</p>
+ <p>&copy; 2025 NAGANO Co., Ltd.</p>
+</footer>
+</body>
+</html>

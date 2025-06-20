@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社ナガノ</title>
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-headline {
+        animation: fadeInUp 1.5s ease forwards;
+        opacity: 0;
+      }
+      @keyframes zoomHero {
+        0% {
+          background-size: 100%;
+        }
+        100% {
+          background-size: 110%;
+        }
+      }
+      @keyframes growFadeIn {
+        0% {
+          font-size: 2em;
+          opacity: 0;
+        }
+        100% {
+          font-size: 3.5em;
+          opacity: 1;
+        }
+      }
+      .animate-text {
+        animation: growFadeIn 2s ease forwards;
+        font-weight: bold;
+        color: #1f2b38;
+        margin: 0.5em 0;
+      }
+      /* 共通スタイル */
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header, footer {
+        background: #1f2b38;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        flex-shrink: 0; /* 縮まないように固定 */
+        box-sizing: border-box; /* paddingを含めて高さ計算 */
+      }
+      nav a {
+        margin: 0 1em;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .hero {
+        background: url('images/hero-nagano-building.jpg') center/cover no-repeat;
+        animation: zoomHero 8s ease-out forwards;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        position: relative; /* 子要素のabsolute基準 */
+        overflow: hidden;
+        flex: 1; /* 残りのスペースを埋める */
+        /* display: flex; flex-direction: column; align-items: center; justify-content: center; */
+        /* PC表示ではhero-contentがabsoluteなのでhero自体にはflexboxは不要 */
+      }
+
+      /* ヒーローコンテンツのスタイル */
+      .hero-content {
+        position: absolute; /* heroの背景画像の上に重ねて表示 */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0 1em;
+        box-sizing: border-box;
+        z-index: 2; /* 背景画像より手前に表示 */
+      }
+
+      .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+      }
+      .hero p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+      }
+      .cta {
+        margin-top: 1.5em;
+        background: #e67e22;
+        padding: 1em 2em;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      footer p {
+        margin: 0.3em 0;
+      }
+      /* ヘッダーのスタイル */
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header h1 {
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* 中央揃えを追加 */
+        font-size: 1.8em; /* デスクトップ用フォントサイズ */
+      }
+      .site-logo {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+        padding: 0 1em;
+      }
+      .shutter-effect::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        animation: shutter 2s ease-in-out forwards;
+        z-index: 1; /* コンテンツと背景の間 */
+      }
+      @keyframes shutter {
+        0% {
+          background-color: rgba(0, 0, 0, 0);
+        }
+        50% {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          background-color: rgba(0, 0, 0, 0);
+        }
+      }
+
+      /* モバイル画像コンテナのスタイル */
+      .mobile-images {
+        display: none; /* デフォルトでは非表示 (PC表示時) */
+      }
+      .mobile-images img {
+        width: 100%; /* 親要素の幅に合わせる */
+        max-width: 300px; /* 画像の最大幅 */
+        height: auto;
+        margin-bottom: 10px; /* 各画像の下に余白 */
+        border-radius: 8px; /* 角を丸くする */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影を追加 */
+      }
+      .mobile-images img:last-child {
+          margin-bottom: 0; /* 最後の画像の下余白はなし */
+      }
+
+
+      /* レスポンシブ対応のためのメディアクエリ */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 1.8em;
+        }
+        .hero p {
+          font-size: 1em;
+        }
+        .cta {
+          padding: 0.8em 1.5em;
+          font-size: 0.9em;
+        }
+        nav a {
+          margin: 0 0.5em;
+          font-size: 0.9em;
+        }
+        header h1 {
+          font-size: 1.5em;
+        }
+        .site-logo {
+            width: 40px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header {
+          padding-top: 15px; 
+          padding-bottom: 15px; 
+        }
+        header h1 {
+          flex-direction: column; 
+          margin-bottom: 0.5em;
+        }
+        .site-logo {
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
+        nav {
+          flex-direction: column; 
+          gap: 0.5em;
+          padding: 0.5em 1em;
+        }
+        nav a {
+          margin: 0;
+          padding: 0.5em 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+        }
+        nav a:last-child {
+          border-bottom: none; 
+        }
+
+        /* heroセクションはそのまま背景画像を表示し、その下にmobile-imagesを追加する */
+        .hero {
+          animation: none; /* 背景アニメーションはモバイルでは不要であれば停止 */
+          display: flex; /* flexboxで子要素を縦に並べる */
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start; /* コンテンツと画像を上寄せ */
+          /* min-height: auto; を削除。flex:1 で高さを取る */
+          padding-bottom: 20px; /* 下部に追加する画像との間に余白 */
+          box-sizing: border-box; /* paddingを含めて幅計算 */
+        }
+        .hero-content {
+          position: relative; /* flexboxの要素にするためrelativeに変更 */
+          top: auto;
+          left: auto;
+          transform: none; /* absoluteの変換を解除 */
+          color: white; /* 背景画像の上なので白色を維持 */
+          text-shadow: 1px 1px 2px black; /* 影を維持 */
+          width: 100%; /* 幅をフルにする */
+          padding-top: 2em; /* 上部に余白を追加 */
+          padding-bottom: 1em; /* 下部に余白を追加 */
+          order: 1; /* hero-contentを最初にする */
+        }
+        .shutter-effect::before {
+            /* モバイルではシャッターエフェクトが不要であれば非表示 */
+            display: none; 
+        }
+        .mobile-images {
+            display: flex; /* モバイルで表示する */
+            flex-direction: column; /* 縦並び */
+            align-items: center; /* 水平中央揃え */
+            padding: 1em 1em; /* モバイル画像コンテナのパディング */
+            background-color: #f7f7f7; /* モバイル画像の背景色 */
+            width: 100%;
+            box-sizing: border-box;
+            order: 2; /* hero-contentの下に配置 */
+        }
+        .hero h1 {
+          font-size: 1.5em;
+        }
+        .hero p {
+          font-size: 0.9em;
+        }
+        .cta {
+          font-size: 0.8em;
+        }
+        footer p {
+            font-size: 0.8em;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="images/naganologo.png" alt="サイトのロゴ" class="site-logo">株式会社ナガノ</h1>
+        <nav>
+            <a href="./about.html">会社概要</a>
+            <a href="./services.html">事業内容</a>
+            <a href="./strengths.html">強み・実績</a>
+            <a href="./contact.html">お問い合わせ</a>
+        </nav>
+    </header>
+    <section class="hero shutter-effect">
+        <div class="hero-content">
+            <h1 class="animate-headline">1本のネジから、あなたの味方</h1>
+            <p>A single screw can be your ally</p>
+            <a href="./contact.html" class="cta">お問い合わせはこちら</a>
+        </div>
+        
+    </section>
+    <footer>
+        <p>株式会社ナガノ</p>
+        <p>〒334-0074　埼玉県川口市江戸1-9-35</p>
+        <p>TEL: 048-282-8611</p>
+        <p>&copy; 2025 NAGANO Co., Ltd.</p>
+    </footer>
+    <script>
+        // アニメーションスクリプトのみ残す
+        window.addEventListener('load', () => {
+            const headline = document.querySelector('.animate-headline');
+            if (!headline) return;
+
+            const text = headline.textContent;
+            const characters = text.split('');
+            headline.textContent = '';
+
+            characters.forEach((char, index) => {
+                const span = document.createElement('span');
+                span.textContent = char;
+                span.style.opacity = '0';
+                span.style.transition = `opacity 0.5s ease ${index * 0.1}s`;
+                headline.appendChild(span);
+            });
+
+            setTimeout(() => {
+                headline.querySelectorAll('span').forEach(span => {
+                    span.style.opacity = '1';
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>

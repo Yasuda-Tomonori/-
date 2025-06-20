@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>強み・実績 - 株式会社ナガノ</title>
+  
+<style>
+body { 
+  font-family: sans-serif; 
+  line-height: 1.6; 
+  margin: 0; 
+  padding: 0; 
+  text-align: center; 
+  display: flex; /* 追加: flexコンテナにする */
+  flex-direction: column; /* 追加: 子要素を縦に並べる */
+  min-height: 100vh; /* 追加: 少なくともビューポートの高さにする */
+}
+header, footer {
+  background: #1f2b38; 
+  color: white; 
+  text-align: center; 
+  padding: 1em 0;
+  flex-shrink: 0; /* 追加: 縮まないように固定 */
+  box-sizing: border-box; /* 追加: paddingを含めて高さ計算 */
+}
+nav a {
+  margin: 0 1em; 
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold;
+}
+section { 
+  padding: 2em; 
+  max-width: 800px; 
+  margin: auto; 
+  flex-grow: 1; /* 追加: 残りのスペースを埋める */
+}
+.feature {
+  margin: 2em auto;
+  text-align: left;
+  max-width: 800px;
+  font-size: 1.2em;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+.feature-icon {
+  font-size: 4em;
+  margin-bottom: 0.7em;
+  display: inline-block;
+  background: #1f2b38;
+  color: white;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.4em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+footer p { 
+  margin: 0.3em 0; 
+}
+
+.text-container {
+ /* text-align: left !important; ← !important を削除 */
+ text-align: left; /* デフォルトは左寄せ */
+ max-width: 600px;
+ margin: 0 auto;
+}
+.text-container p, .text-container ul {
+ margin-bottom: 1em;
+ line-height: 1.6;
+ list-style: none; /* !important を削除 */
+ padding-left: 0; /* !important を削除 */
+}
+.text-container ul li {
+ margin-left: 1em;
+ list-style-type: none; /* !important を削除 */
+ padding-left: 0; /* !important を削除 */
+}
+/* img.president はservices.htmlに存在しないため削除 */
+
+/* ヘッダーのスタイルを調整 (共通化) */
+header {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+header h1 {
+ margin-bottom: 1em;
+ display: flex;
+ align-items: center;
+ justify-content: center; /* 中央揃えを追加 */
+ font-size: 1.8em; /* デスクトップ用フォントサイズ */
+}
+.site-logo {
+ width: 50px;
+ height: auto;
+ margin-right: 10px;
+}
+/* ナビゲーションの共通スタイル */
+nav {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 1em;
+ padding: 0 1em;
+}
+
+/* レスポンシブ対応のためのメディアクエリ (共通化) */
+@media (max-width: 768px) {
+  section {
+    padding: 1.5em 1em; 
+  }
+  header h1 {
+    font-size: 1.5em; 
+  }
+  .site-logo {
+    width: 40px; 
+  }
+  nav a {
+    margin: 0 0.5em; 
+    font-size: 0.9em; 
+  }
+  .feature {
+    font-size: 1.1em; /* 少し小さくする */
+  }
+  .feature-icon {
+    font-size: 3.5em; /* アイコンを少し小さくする */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-top: 15px; /* index.htmlと共通 */
+    padding-bottom: 15px; /* index.htmlと共通 */
+  }
+  header h1 {
+    flex-direction: column; 
+    margin-bottom: 0.5em;
+  }
+  .site-logo {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  nav {
+    flex-direction: column; 
+    gap: 0.5em;
+    padding: 0.5em 1em;
+  }
+  nav a {
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+  }
+  nav a:last-child {
+    border-bottom: none; 
+  }
+  section {
+    padding: 1em; 
+  }
+  .text-container {
+    text-align: left; 
+  }
+  .feature {
+    font-size: 1em; /* さらに小さくする */
+    margin: 1.5em auto; /* マージンを調整 */
+  }
+  .feature-icon {
+    font-size: 3em; /* アイコンをさらに小さくする */
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.4em;
+    padding: 0.3em;
+  }
+  footer p {
+    font-size: 0.8em; 
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+ <h1><img src="images/naganologo.png" alt="サイトのロゴ" class="site-logo">株式会社ナガノ</h1>
+ <nav>
+ <a href="./index.html">ホーム</a>
+ <a href="./about.html">会社概要</a>
+ <a href="./services.html">事業内容</a>
+ <a href="./strengths.html">強み・実績</a>
+ <a href="./contact.html">お問い合わせ</a>
+ </nav>
+</header>
+
+<section>
+  
+<div class="feature">
+  <span class="feature-icon">🏢</span>
+  <p>地域最大規模の在庫と対応力を誇る専門商社として、個人のお客様から企業のご要望まで柔軟にお応えします。<br>
+  当社は地域最大級の在庫量と、長年の実績に基づく確かな対応力を持つ締結部品の専門商社です。ネジ1本から大量発注まで幅広く対応可能で、一般ユーザー様のDIY用途から、製造・建築・設備関連企業の業務使用まで、規模の大小を問わずご要望に柔軟にお応えします。取扱製品の多様性と専門スタッフによるきめ細かな対応により、困ったときに「まず相談してみよう」と思っていただけるパートナーを目指しています。</p>
+</div>
+<div class="feature">
+  <span class="feature-icon">🚚</span>
+  <p>埼玉県全域をカバーする迅速な配送体制で、緊急対応にも強みを発揮。お急ぎのご注文もお任せください。<br>
+  当社では、埼玉県内全域を対象とした迅速な配送ネットワークを整備しており、地元密着型ならではのスピード対応に自信があります。急なトラブルや納期短縮への対応など、緊急時にも柔軟にご対応可能。自社便や協力配送業者との連携により、午前中のご注文であれば当日中の配送にも対応しています。工場や現場が止まってしまうような状況にも、安心してお任せいただける体制を構築しています。</p>
+</div>
+<div class="feature">
+  <span class="feature-icon">⚡</span>
+  <p>店頭引き渡しや小口出荷にもスピーディに対応。短納期でも安心してご利用いただける体制を整えています。<br>
+  少量のご注文や急ぎのご用件にもスピーディに対応できるよう、店頭での引き渡しや小口出荷体制を強化しています。ご来社いただければその場で商品をお渡しすることも可能で、事前にご連絡いただければスムーズにご用意いたします。小ロット・多品種の発注にも対応しており、在庫確認や納期のご相談も即座に対応できる柔軟な体制を整備。試作や修理など短納期で必要な際にも、安心してご利用いただけます。</p>
+</div>
+<div class="feature">
+  <span class="feature-icon">🔧</span>
+  <p>創業70年以上の経験と蓄積された専門知識で、「どれを選べばよいか分からない」というお悩みにもしっかり寄り添い、最適なご提案をいたします。<br>
+  当社は創業70年以上にわたり、締結部品専門商社として多種多様な業界のお客様と取引を重ね、豊富な経験と専門知識を蓄積してまいりました。使用環境、材質の特性、コスト面など、ネジ選定に関するあらゆるご相談に丁寧に対応。お客様の立場に立って「分かりやすく、正確に」をモットーに、最適な製品をご提案いたします。専門的な知識がない方でも、安心してご相談いただける体制を整えております。</p>
+</div>
+
+</section>
+
+<footer>
+  <p>株式会社ナガノ</p>
+  <p>〒334-0074　埼玉県川口市江戸1-9-35</p>
+  <p>TEL: 048-282-8611</p>
+  <p>&copy; 2025 NAGANO Co., Ltd.</p>
+</footer>
+</body>
+</html>
