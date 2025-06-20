@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>株式会社金子商店</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      line-height: 1.7;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .badges {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .badge {
+      flex: 1;
+      min-width: 150px;
+      background: #ecf0f1;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    iframe {
+      width: 100%;
+      border: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 600px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #bdc3c7;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 600px) {
+      .badges {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>株式会社金子商店</h1>
+    <p>建築土木橋梁関連資材・鋲螺販売</p>
+  </header>
+
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#services">事業内容</a>
+    <a href="#strengths">強み</a>
+    <a href="#episodes">エピソード</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <section id="about">
+    <h2>会社概要</h2>
+    <p><strong>会社名：</strong>株式会社金子商店</p>
+    <p><strong>所在地：</strong>富山県砺波市久泉215</p>
+    <p><strong>TEL：</strong>0763-33-2874</p>
+    <p><strong>FAX：</strong>0763-33-3488</p>
+    <p><strong>従業員数：</strong>6人</p>
+    <p><strong>理念：</strong>地域密着で幅広い品揃えを通じ、地域のインフラ・建設業を支えます。</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.240518224194!2d136.95209151516807!3d36.676365879972065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff782cf51bd87f1%3A0x71673c750c268805!2z5aSn5a2m5biC5rOV5bed5biC5LqV5bO25Yy65YyX5bSO!5e0!3m2!1sja!2sjp!4v1685001234567"
+      height="300"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section id="services">
+    <h2>事業内容</h2>
+    <ul>
+      <li>建築資材の販売</li>
+      <li>土木橋梁関連資材の供給</li>
+      <li>鋲螺（ボルト・ナット等）製品の販売</li>
+      <li>特殊パーツの手配および相談対応</li>
+      <li>地域施工業者との提携・サポート</li>
+    </ul>
+  </section>
+
+  <section id="strengths">
+    <h2>当社の強み</h2>
+    <div class="badges">
+      <div class="badge">地域密着</div>
+      <div class="badge">柔軟な対応力</div>
+      <div class="badge">多品種・小ロット対応</div>
+    </div>
+  </section>
+
+  <section id="episodes">
+    <h2>社風・エピソード</h2>
+    <p><strong>社長の趣味：</strong>大相撲観戦を口実にした旅行、大酒呑み旅行。</p>
+    <p><strong>職場の雰囲気：</strong>社長と奥様は社交的で、それ以外の社員は非常におとなしい落ち着いた職場です。</p>
+    <p><strong>印象的なエピソード：</strong>かつての派遣社員が博多で飲食店を開業後、九州場所のたびに社長が仲間を連れて訪れ、親交を続けている。</p>
+    <p><strong>営業担当の声：</strong>先代社長の訛りが強く、話が半分しか分からなかったが、現社長が通訳してくれたのがとても助かった。</p>
+    <img src="画像1.png" alt="社内の様子" style="max-width:100%; margin-top:20px; border:1px solid #ccc; border-radius:8px;">
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <form>
+      <input type="text" name="name" placeholder="お名前" required>
+      <input type="email" name="email" placeholder="メールアドレス" required>
+      <textarea name="message" placeholder="お問い合わせ内容" rows="5" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+    <p style="margin-top:10px;">またはお電話：<strong>0763-33-2874</strong></p>
+  </section>
+
+  <footer>
+    <p>株式会社金子商店 | 富山県砺波市久泉215 | TEL: 0763-33-2874</p>
+    <p>&copy; 2025 Kaneko Shoten Co., Ltd. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+import React from "react";
+
+export default function KanekoShotenSite() {
+  return (
+    <div>
+      <header style={{ backgroundColor: '#2c3e50', color: '#fff', padding: '30px 20px', textAlign: 'center' }}>
+        <h1>株式会社金子商店</h1>
+        <p>建築土木橋梁関連資材・鋲螺販売</p>
+      </header>
+
+      <nav style={{ backgroundColor: '#34495e', color: 'white', textAlign: 'center', padding: '10px 0' }}>
+        {['会社概要', '事業内容', '強み', 'エピソード', 'お問い合わせ'].map((label, i) => (
+          <a key={i} href={`#${['about', 'services', 'strengths', 'episodes', 'contact'][i]}`} style={{ color: 'white', textDecoration: 'none', margin: '0 15px' }}>{label}</a>
+        ))}
+      </nav>
+
+      <section id="about" style={sectionStyle}>
+        <h2 style={h2Style}>会社概要</h2>
+        <p><strong>会社名：</strong>株式会社金子商店</p>
+        <p><strong>所在地：</strong>富山県砺波市久泉215</p>
+        <p><strong>TEL：</strong>0763-33-2874</p>
+        <p><strong>FAX：</strong>0763-33-3488</p>
+        <p><strong>従業員数：</strong>6人</p>
+        <p><strong>理念：</strong>地域密着で幅広い品揃えを通じ、地域のインフラ・建設業を支えます。</p>
+        <div style={{ marginTop: 20 }}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.240518224194!2d136.95209151516807!3d36.676365879972065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff782cf51bd87f1%3A0x71673c750c268805!2z5aSn5a2m5biC5rOV5bed5biC5LqV5bO25Yy65YyX5bSO!5e0!3m2!1sja!2sjp!4v1685001234567"
+            height="300"
+            style={{ width: '100%', border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="services" style={sectionStyle}>
+        <h2 style={h2Style}>事業内容</h2>
+        <ul>
+          <li>建築資材の販売</li>
+          <li>土木橋梁関連資材の供給</li>
+          <li>鋲螺（ボルト・ナット等）製品の販売</li>
+          <li>特殊パーツの手配および相談対応</li>
+          <li>地域施工業者との提携・サポート</li>
+        </ul>
+        <img src="https://via.placeholder.com/800x400?text=建築資材のイメージ" alt="建築資材の代表イメージ" style={{ width: '100%', marginTop: 20 }} />
+      </section>
+
+      <section id="strengths" style={sectionStyle}>
+        <h2 style={h2Style}>当社の強み</h2>
+        <div style={badgeContainer}>
+          <div style={badgeStyle}>地域密着</div>
+          <div style={badgeStyle}>柔軟な対応力</div>
+          <div style={badgeStyle}>多品種・小ロット対応</div>
+        </div>
+      </section>
+
+      <section id="episodes" style={sectionStyle}>
+        <h2 style={h2Style}>社風・エピソード</h2>
+        <p><strong>社長の趣味：</strong>大相撲観戦を口実にした旅行、大酒呑み旅行。</p>
+        <p><strong>職場の雰囲気：</strong>社長と奥様は社交的で、それ以外の社員は非常におとなしい落ち着いた職場です。</p>
+        <p><strong>印象的なエピソード：</strong>かつての派遣社員が博多で飲食店を開業後、九州場所のたびに社長が仲間を連れて訪れ、親交を続けている。</p>
+        <p><strong>営業担当の声：</strong>先代社長の訛りが強く、話が半分しか分からなかったが、現社長が通訳してくれたのがとても助かった。</p>
+        <img src="画像1.png" alt="社内の様子" style={{ maxWidth: '100%', marginTop: 20, border: '1px solid #ccc', borderRadius: 8 }} />
+      </section>
+
+      <section id="contact" style={sectionStyle}>
+        <h2 style={h2Style}>お問い合わせ</h2>
+        <form style={{ display: 'flex', flexDirection: 'column', gap: 10, maxWidth: 600 }}>
+          <input type="text" name="name" placeholder="お名前" required style={inputStyle} />
+          <input type="email" name="email" placeholder="メールアドレス" required style={inputStyle} />
+          <textarea name="message" placeholder="お問い合わせ内容" rows="5" required style={inputStyle}></textarea>
+          <button type="submit" style={{ background: '#2c3e50', color: 'white', padding: 10, border: 'none', borderRadius: 5 }}>送信</button>
+        </form>
+        <p style={{ marginTop: 10 }}>またはお電話：<strong>0763-33-2874</strong></p>
+      </section>
+
+      <footer style={{ backgroundColor: '#bdc3c7', textAlign: 'center', padding: 20, fontSize: '0.9em' }}>
+        <p>株式会社金子商店 | 富山県砺波市久泉215 | TEL: 0763-33-2874</p>
+        <p>&copy; 2025 Kaneko Shoten Co., Ltd. All Rights Reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
+const sectionStyle = {
+  padding: '30px 20px',
+  maxWidth: '1000px',
+  margin: 'auto'
+};
+
+const h2Style = {
+  borderBottom: '2px solid #2c3e50',
+  paddingBottom: '5px',
+  marginBottom: '20px'
+};
+
+const badgeContainer = {
+  display: 'flex',
+  gap: '15px',
+  flexWrap: 'wrap',
+  marginTop: '10px'
+};
+
+const badgeStyle = {
+  flex: 1,
+  minWidth: '150px',
+  background: '#ecf0f1',
+  padding: '10px',
+  textAlign: 'center',
+  borderRadius: '8px'
+};
+
+const inputStyle = {
+  padding: '10px',
+  fontSize: '1em',
+  border: '1px solid #ccc',
+  borderRadius: '5px'
+};
