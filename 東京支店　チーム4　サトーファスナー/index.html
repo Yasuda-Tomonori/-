@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>有限会社サトーファスナー</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #fefcf7;
+      font-family: 'Hiragino Mincho ProN', serif;
+      color: #333;
+      line-height: 1.8;
+    }
+    header {
+      background: none;
+      color: #3b2f1c;
+      text-align: center;
+      padding: 100px 20px;
+      font-family: 'Hiragino Mincho ProN', serif;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .badge { background: #eee; padding: 10px 20px; border-radius: 20px; font-weight: bold; }
+    .services img { width: 100%; height: auto; max-width: 300px; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; font-size: 0.9em; }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    input, textarea { padding: 10px; font-size: 1em; width: 100%; max-width: 600px; }
+    button { background: #007BFF; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    iframe { width: 100%; max-width: 600px; height: 300px; border: 0; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2em; }
+      header h2 {
+      font-size: 2em;
+      margin-top: 0;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+      .services { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body style="padding-top: 60px;">
+  <header>
+    <nav style="position: fixed; top: 0; width: 100%; z-index: 1000; background-color: rgba(255, 255, 255, 0.9); padding: 10px 0; font-size: 0.95em;">
+      <ul style="display: flex; justify-content: center; list-style: none; margin: 0; padding: 0; gap: 30px; flex-wrap: nowrap; white-space: nowrap; overflow-x: auto;">
+        <li><a href="#about" style="color: #3b2f1c; text-decoration: none; font-weight: bold;">会社概要</a></li>
+        <li><a href="#services" style="color: #3b2f1c; text-decoration: none; font-weight: bold;">事業内容/製品サービス</a></li>
+        <li><a href="#strength" style="color: #3b2f1c; text-decoration: none; font-weight: bold;">当社の強み</a></li>
+        <li><a href="#recruit" style="color: #3b2f1c; text-decoration: none; font-weight: bold;">採用情報</a></li>
+        <li><a href="#contact" style="color: #3b2f1c; text-decoration: none; font-weight: bold;">お問い合わせ</a></li>
+      </ul>
+    
+    </nav>
+
+    <div class="swiper-container" style="width: 100%; height: 400px;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('gaikan1.JPG') center/cover no-repeat; height: 400px;"></div>
+        <div class="swiper-slide" style="background: url('gaikan2.JPG') center/cover no-repeat; height: 400px;"></div>
+        <div class="swiper-slide" style="background: url('gaikan3.JPG') center/cover no-repeat; height: 400px;"></div>
+      </div>
+    </div>
+    <div style="position: relative; margin-top: 0; padding-top: 20px; text-align: center; color: #3b2f1c; z-index: 10; background-color: rgba(255,255,255,0.6);">
+      <h1 style="font-family: 'Yu Mincho', 'MS PMincho', serif; letter-spacing: 2px; background-color: rgba(255,255,255,0.6); display: inline-block; padding: 5px 15px; border-radius: 6px;">有限会社サトーファスナー</h1>
+    <h2 style="font-family: 'Yu Mincho', 'MS PMincho', serif; font-weight: normal; background-color: rgba(255,255,255,0.5); display: inline-block; padding: 5px 12px; border-radius: 6px;">皆様に信頼される松戸の老舗ネジ屋</h2>
+    <a href="#contact" class="cta-button" style="background: #007BFF; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; display: inline-block; margin-top: 20px;">お問い合わせ</a>
+    </div>
+  </header>
+
+  <section id="greeting">
+    <h2>社長の挨拶</h2>
+    <img src="president.jpg" alt="社長写真" style="width:500px; height:auto; border-radius:8px; margin-bottom: 20px;">
+    <p>
+      当社は創業以来、「誠実」「迅速」「高品質」をモットーに、お客様との信頼関係を第一に考えてまいりました。多様化するニーズに対応するために、社員一同常に向上心を持ち、お客様にご満足いただけるサービスと製品づくりを目指しております。「困ったときのサトーファスナー！」としてご用命くださいませ。
+    </p>
+    <p style="text-align: right; margin-top: 20px;"><strong>代表取締役　佐藤 克彦</strong></p>
+  </section>
+  <hr style="margin: 40px 0; border: none; border-top: 2px solid #ccc;">
+  <section id="about">
+    <h2>会社概要</h2>
+    <p><strong>会社名：</strong>有限会社サトーファスナー</p>
+    <p><strong>所在地：</strong>千葉県松戸市栄町西3-1048-3</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.4746931994787!2d139.89395587603175!3d35.81282742273345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189b2a961e6ae9%3A0xc44bcf2e9ffc7d47!2z77yI5pyJ77yJ44K144OI44O844OV44Kh44K544OK44O877yI44ON44K46LKp5aOy77yJ!5e0!3m2!1sja!2sjp!4v1747457953386!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p><strong>代表者：</strong>佐藤 克彦</p>
+    <p><strong>創業：</strong>1998年</p>
+   <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .swiper-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 40px auto;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #333;
+    }
+
+    .swiper-pagination-bullet {
+      background: #666;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #007aff;
+    }
+
+    hr {
+      margin: 40px auto;
+      max-width: 600px;
+      border: none;
+      border-top: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="swiper-container" style="width: 100%; height: 400px;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('soko1.JPG') center/cover no-repeat; height: 400px;"></div>
+        <div class="swiper-slide" style="background: url('soko2.JPG') center/cover no-repeat; height: 400px;"></div>
+        <div class="swiper-slide" style="background: url('soko3.JPG') center/cover no-repeat; height: 400px;"></div>
+      </div>
+    <!-- ページネーション & ナビゲーション -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <hr />
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Swiper(".about-slider", {
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    });
+  </script>
+  <section id="services">
+    <h2>事業内容 / 製品サービス</h2>
+    <div class="services">
+      <div>
+        <h3>ネジ・ボルトの製造販売</h3>
+        <img src="product1.png" alt="ネジ画像">
+        <p>当社のネジは耐久性と精度に優れ、幅広い産業用途に対応可能です。</p>
+      </div>
+      <div>
+        <h3>オーダーメイド部品対応</h3>
+        <img src="product2.jpg" alt="オーダー部品画像">
+        <p>オーダーメイドのご要望にお応えし、1個からでも柔軟に対応いたします。</p>
+      </div>
+      <div>
+        <h3>自社配送サービス</h3>
+        <img src="product3.png" alt="自社配送サービス画像">
+        <p>自社便による柔軟な配送体制で、必要なネジを迅速にお届けします。</p>
+      </div>
+    </div>
+  </section>
+  <hr style="margin: 40px 0; border: none; border-top: 2px solid #ccc;">
+  <section id="strength">
+    <h2>当社の強み</h2>
+    <div class="badges">
+      <div class="badge">
+        短納期対応：小ロットや急ぎの案件にも迅速に対応できる体制を整えています。
+      </div>
+      <div class="badge">
+        取引先100社以上：多くのお客様に継続してご信頼いただいております。
+      </div>
+      <div class="badge">
+        自社ルート配達による安定供給：配送の遅れを最小限に抑え、安定した納品を実現しています。
+      </div>
+    </div>
+  </section>
+  <hr style="margin: 40px 0; border: none; border-top: 2px solid #ccc;">
+  <section id="recruit">
+    <h2>採用情報</h2>
+    <p>有限会社サトーファスナーでは、ものづくりに情熱を持つ仲間を募集しています。</p>
+ <title>採用情報 | 有限会社サトーファスナー</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Hiragino Mincho ProN', serif;
+      line-height: 1.8;
+      background-color: #fefcf7;
+      color: #333;
+    }
+    header {
+      background: #eae6dc;
+      color: #3b2f1c;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 0;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    .job-block {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      background: #fdfdfc;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>採用情報</h1>
+    <p>私たちと一緒に、ものづくりの未来を支えませんか？</p>
+  </header>
+
+  <section>
+    <div class="job-block">
+      <h2>募集職種：出荷業務スタッフ</h2>
+      <p><strong>仕事内容：</strong>商品の梱包・出荷準備、伝票処理、在庫管理などの出荷業務全般</p>
+      <p><strong>応募資格：</strong>未経験歓迎・経験者優遇・高卒以上</p>
+      <p><strong>勤務地：</strong>千葉県松戸市</p>
+      <p><strong>勤務時間：</strong>8:30～17:30（土日祝休）</p>
+    </div>
+
+    <div class="job-block">
+      <h2>募集職種：営業・ルート配送</h2>
+      <p><strong>仕事内容：</strong>取引先企業への訪問、納品業務、見積・受注対応</p>
+      <p><strong>応募資格：</strong>普通自動車免許（AT限定可）</p>
+      <p><strong>勤務地：</strong>千葉県松戸市</p>
+      <p><strong>勤務時間：</strong>9:00～18:00（土日祝休）</p>
+    </div>
+
+    <p>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <form action="mailto:neji@ec5.technowave.ne.jp" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="お名前" required />
+      <input type="email" name="email" placeholder="メールアドレス" required />
+      <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+    <p>または TEL: <a href="tel:0473643603">047-364-3603</a></p>
+  </section>
+  <footer>
+    <p>有限会社サトーファスナー / 千葉県松戸市栄町西3-1048-3 / TEL: 047-364-3603</p>
+    <p>&copy; 2025 有限会社サトーファスナー</p>
+  </footer>
+
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+    });
+  </script>
+<script>
+    new Swiper('.about-slider', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
