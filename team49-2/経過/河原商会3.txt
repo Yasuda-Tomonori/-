@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社河原商会</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #004a99;
+      --accent-color: #f2f7fc;
+      --text-color: #1a1a1a;
+      --gray-border: #ddd;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background: white;
+      color: var(--text-color);
+    }
+    .hero {
+      background: url('画像3.png') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    }
+    .hero p {
+      font-size: 1.3em;
+      margin-top: 10px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+    nav {
+      background: white;
+      border-bottom: 1px solid var(--gray-border);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: var(--main-color);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    nav a:hover {
+      background: var(--accent-color);
+    }
+    main {
+      max-width: 1140px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 1.5em;
+      border-left: 6px solid var(--main-color);
+      padding-left: 12px;
+      margin-top: 60px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    section {
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    section.visible, h2.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .grid img {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 8px;
+      border: 1px solid var(--gray-border);
+    }
+    iframe {
+      width: 100%;
+      border: 0;
+      margin-top: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+    }
+    input, textarea {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: var(--main-color);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+    footer {
+      background: var(--accent-color);
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      document.querySelectorAll('section, h2').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="hero">
+    <h1>株式会社河原商会</h1>
+    <p>地域と信頼に根ざした鋲螺専門商社</p>
+  </div>
+
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#services">事業内容</a>
+    <a href="#strength">当社の強み</a>
+    <a href="#gallery">外観ギャラリー</a>
+    <a href="#episode">エピソード</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>会社概要</h2>
+      <p><strong>会社名：</strong>株式会社河原商会</p>
+      <p><strong>所在地：</strong>石川県金沢市出雲町イ-120</p>
+      <p><strong>電話：</strong>076-263-2044</p>
+      <p><strong>FAX：</strong>076-223-6015</p>
+      <p><strong>従業員数：</strong>4人</p>
+      <p><strong>理念：</strong>長年の信頼を大切に、地域に根ざしたサービスを。</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.5998122325454!2d136.6542698152282!3d36.569493479995295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff84421a7f315e1%3A0xb2e2e34d8e1e5945!2z44CSOTIwLTA4MzMg5paw5a6_55yM5YyX5Lmd5bee5biC5p2R5bGx55S677yS77yR77yT77yQ!5e0!3m2!1sja!2sjp!4v1685174500000"
+        height="300" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <section id="services">
+      <h2>事業内容</h2>
+      <p>鋲螺（ボルト・ナット・アンカー等）製品の販売を主軸に、必要に応じて各種手配や相談対応も行っています。</p>
+    </section>
+
+    <section id="strength">
+      <h2>当社の強み</h2>
+      <ul>
+        <li>長年の取引による信頼関係</li>
+        <li>アットホームで温かい対応</li>
+        <li>社長のネットワークによる紹介・つながり</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>外観ギャラリー</h2>
+      <div class="grid">
+        <img src="画像2.png" alt="看板写真">
+        <img src="画像3.png" alt="倉庫正面">
+        <img src="画像4.png" alt="事務所外観">
+      </div>
+    </section>
+
+    <section id="episode">
+      <h2>エピソード・社風</h2>
+      <p><strong>趣味：</strong>社長は息子と一緒にカード収集を楽しむほどの家族想い。</p>
+      <p><strong>雰囲気：</strong>全員で手を振って見送ってくれる、まるでドラマのような温かい職場。</p>
+      <p><strong>ストーリー：</strong>社長は一度会社を辞めたものの、祖父の体調不良を機に家業に戻り、そこから一切弱音を吐かずに経営を支える芯の強い人物。</p>
+      <p><strong>営業の声：</strong>「まいど」から「こんにちは」に変えたのは、社長のお母様の優しい挨拶が心に残ったから。</p>
+    </section>
+
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <form>
+        <input type="text" name="name" placeholder="お名前" required>
+        <input type="email" name="email" placeholder="メールアドレス" required>
+        <textarea name="message" placeholder="お問い合わせ内容" rows="5" required></textarea>
+        <button type="submit">送信</button>
+      </form>
+      <p style="margin-top: 10px;">またはお電話で：<strong>076-263-2044</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>株式会社河原商会 | 石川県金沢市出雲町イ-120 | TEL: 076-263-2044</p>
+    <p>&copy; 2025 Kawahara Shokai Co., Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>
