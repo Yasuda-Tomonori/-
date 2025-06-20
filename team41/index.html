@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>有限会社旭鋲螺製作所</title>
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9fc;
+      color: #222;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+    header p {
+      font-size: 1.1em;
+    }
+    nav {
+      background: #005f99;
+      text-align: center;
+      padding: 12px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2 {
+      color: #005f99;
+      border-bottom: 2px solid #005f99;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 10px;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="有限会社旭鋲螺製作所 ロゴ" style="max-width: 100%; height: auto;">
+    <p>高品質なネジを確かな技術で</p>
+  </header>
+
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#strength">強み</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <section id="about">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+      <div style="flex: 1 1 300px; min-width: 300px;">
+    <h2>会社概要</h2>
+    <p><strong>会社名：</strong>有限会社旭鋲螺製作所</p>
+    <p><strong>代表取締役：</strong>安藤 曉</p>
+    <p><strong>所在地：</strong></p>
+    <ul>
+      <li><strong>本社：</strong>山形県酒田市両羽町5番地の25<br>TEL: 0234-24-3833 / FAX: 0234-23-2650</li>
+      <li><strong>本社工場：</strong>山形県酒田市北浜町2-69<br>TEL: 0234-33-5244 / FAX: 0234-33-5266</li>
+      <li><strong>第二工場：</strong>山形県酒田市熊手島上福島453<br>TEL: 0234-33-5244 / FAX: 0234-33-5266</li>
+      <li><strong>山形営業所：</strong>山形県山形市南栄町1丁目7-14<br>TEL: 023-641-0963 / FAX: 023-641-1564</li>
+    </ul>
+    <p><strong>創業：</strong>昭和10年6月1日</p>
+    <p><strong>資本金：</strong>1,500万円</p>
+    <p><strong>従業員数：</strong>33名（男30名・女3名）</p>
+    <p><strong>加盟団体：</strong></p>
+    <ul>
+      <li>建築用アンカーボルトメーカー協会</li>
+      <li>建築用ターンバックル協議会</li>
+      <li>（社）日本建築あと施工アンカー協会（JCAA）</li>
+    </ul>
+        </div>
+      <div style="flex: 1 1 300px; min-width: 300px; text-align: center;">
+        <img src="asahi_building.jpg" alt="会社外観" style="width: 100%; max-width: 400px; border: 1px solid #ccc; border-radius: 5px;">
+              <img src="asahi_warehouse.jpg" alt="倉庫内部" style="width: 100%; max-width: 400px; border: 1px solid #ccc; border-radius: 5px; margin-top: 15px;">
+      </div>
+    </div>
+  </section>
+
+  <section id="strength">
+    <h2>会社の強み</h2>
+    <p>東北地方では数少ないボルト製造メーカーとして、多様な業界を支えています。</p>
+    <p>2003年9月に、JSS（日本鋼構造規格）の建築構造用両ねじアンカーボルト（JSSII13・14/第02-18・19）の認定を取得しました。</p>
+    <p>現在、ISO9001およびJISターンバックル規格の取得を目指して準備中です。</p>
+    <p>ネジの専門企業として、豊富な品ぞろえと高品質な製品で、お客様の多様なニーズにお応えしています。</p>
+    <p>2万5千種以上の商品を取り扱い、効率的かつ迅速な供給体制を整えています。</p>
+  </section>
+
+  <section class="map">
+    <h2>アクセス</h2>
+    <iframe src="https://www.google.com/maps?q=山形県酒田市両羽町5-25&output=embed"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>以下のフォームよりお問い合わせください。</p>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 有限会社旭鋲螺製作所. All rights reserved.</p>
+  </footer>
+</body>
+</html>
