@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小松索道株式会社</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', 'EB Garamond', serif;
+      line-height: 1.7;
+      background-color: #f4f7fa;
+      color: #2e2e2e;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('6123227.gif') center/cover no-repeat;
+      height: 100vh;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+    header p {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+    header a {
+      background: #c9a063;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    header a:hover {
+      background: #a47d3d;
+    }
+    nav {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #c9a063;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 960px;
+      margin: auto;
+      animation: slideUp 1s ease;
+    }
+    h2 {
+      color: #c9a063;
+      border-left: 6px solid #c9a063;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .badges {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      background: #fff8ec;
+      color: #c9a063;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 12px;
+      background: #c9a063;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #a47d3d;
+    }
+    footer {
+      background: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      .badges { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>小松索道株式会社</h1>
+    <h2>空の交通を支える索道メーカー</h2>
+    <p>安全・安心・快適なロープウェイとリフトを設計・施工・保守</p>
+    <a href="#contact">お問い合わせ</a>
+  </header>
+
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#services">事業内容</a>
+    <a href="#strength">強み</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>会社概要</h2>
+      <p><strong>会社名：</strong>小松索道株式会社</p>
+      <p><strong>所在地：</strong>石川県小松市</p>
+      <p><strong>代表者：</strong>山田 太郎</p>
+      <p><strong>創業：</strong>1965年</p>
+      <p><strong>理念：</strong>索道事業を通じて地域と観光産業の発展に貢献します。</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.3382282237485!2d136.452471115262!3d36.404076300839624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff86fd57b1cdd65%3A0xd8ea93ccf77a3c10!2z5p2-5bKh6YOh5bqX!5e0!3m2!1sja!2sjp!4v1684293120000!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="services">
+      <h2>事業内容</h2>
+      <ul>
+        <li>ロープウェイ・リフトの設計・製造・据付</li>
+        <li>既設索道の改修・メンテナンス</li>
+        <li>安全点検・耐用年数診断サービス</li>
+        <li>観光地向け索道提案と支援</li>
+        <li>冬季レジャー施設向け機器提供</li>
+      </ul>
+      <img src="6123227.gif" alt="索道写真">
+    </section>
+
+    <section id="strength">
+      <h2>当社の強み</h2>
+      <div class="badges">
+        <div class="badge">短納期施工対応</div>
+        <div class="badge">ISO9001認証取得</div>
+        <div class="badge">取引実績 300社以上</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <form>
+        <input type="text" name="name" placeholder="お名前" required>
+        <input type="email" name="email" placeholder="メールアドレス" required>
+        <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+        <button type="submit">送信</button>
+      </form>
+      <p style="margin-top: 10px;">またはお電話で：<strong>0761-XX-XXXX</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>小松索道株式会社 | 石川県小松市 | TEL: 0761-XX-XXXX</p>
+    <p>&copy; 2025 Komatsu Sakudo Co., Ltd. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
