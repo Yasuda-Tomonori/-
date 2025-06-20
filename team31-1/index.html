@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>藤岡コンクリート工業株式会社</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+  background: url('u_drain_concrete.jpg') center/cover no-repeat;
+  height: 60vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+    header h1 {
+      font-size: 2.5rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      border-left: 5px solid #007BFF;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .strengths {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .strength {
+      flex: 1;
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-item {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .product-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .product-item h3 {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    @media(max-width: 768px) {
+      .strengths {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+ <header>
+  <h1>藤岡コンクリート工業株式会社</h1>
+  <p style="font-size: 1.5rem; background: rgba(0,0,0,0.5); padding: 8px 16px; border-radius: 5px;">
+    地域を支える、確かなコンクリート製品を。
+  </p>
+</header>
+
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#services">製品・事業内容</a>
+    <a href="#strength">強み</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+<section id="about">
+  <h2>会社概要</h2>
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="fujioka_representative.jpg" alt="代表写真" style="width: 200px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <p style="margin-top: 10px;"><strong>代表取締役 竹市 孝和</strong></p>
+  </div>
+  <p><strong>所在地：</strong>群馬県藤岡市小林735</p>
+  <p><strong>代表者：</strong>代表取締役 竹市 孝和</p>
+  <p><strong>創業：</strong>1967年12月</p>
+  <p><strong>従業員数：</strong>35名</p>
+  <p><strong>事業内容：</strong>コンクリート二次製品の製造・販売</p>
+</section>
+
+  <section id="services">
+    <h2>取扱い製品</h2>
+    <div class="product-gallery">
+    <div class="product-item">
+  <img src="u_drain_concrete.jpg" alt="U字溝">
+  <h3>U字溝</h3>
+</div>
+    <div class="product-item">
+  <img src="l_type_wall.jpg" alt="L型擁壁">
+  <h3>L型擁壁</h3>
+</div>
+      <div class="product-item">
+  <img src="manhole_parts.jpg" alt="マンホール部材">
+  <h3>マンホール部材</h3>
+</div>
+      <<div class="product-item">
+  <img src="boundary_block.jpg" alt="境界ブロック">
+  <h3>境界ブロック</h3>
+</div>
+    </div>
+  </section>
+
+  <section id="strength">
+    <h2>当社の強み</h2>
+    <div class="strengths">
+      <div class="strength">
+        <h3>🕒 短納期</h3>
+        <p>自社工場完備で迅速な納品</p>
+      </div>
+      <div class="strength">
+        <h3>📈 安定経営</h3>
+        <p>創業50年以上・自己資本比率49.7%</p>
+      </div>
+      <div class="strength">
+        <h3>🏢 実績豊富</h3>
+        <p>前田道路、大成ロテックなど主要取引先多数</p>
+      </div>
+    </div>
+  </section>
+
+<section id="access">
+  <h2>アクセス</h2>
+  <div style="width: 100%; height: 400px; margin-bottom: 30px;">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.453225789653!2d139.0881176760475!3d36.2413668990011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601eea5aae3b82e3%3A0x474a667e073b097e!2z6Jek5bKh44Kz44Oz44Kv44Oq44O844OI5bel5qWt77yI5qCq77yJ!5e1!3m2!1sja!2sjp!4v1747450255314!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </iframe>
+  </div>
+</section>
+
+<section id="services">
+
+ <section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>電話：0274-22-1038</p>
+  <p>FAX：0274-22-1091</p>
+  <p style="margin-top: 20px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScCyOyG_epHuYD8xU-qVT9rWvpht8h4MxI3qSIoxdXVhUEJQg/viewform" target="_blank" style="font-size: 1.2rem; color: #007BFF; font-weight: bold;">
+      ▶ お問い合わせフォームはこちら
+    </a>
+  </p>
+</section>
+  </section>
+
+  <footer>
+    <p>藤岡コンクリート工業株式会社｜〒375-0021 群馬県藤岡市小林735｜TEL: 0274-22-1038</p>
+    <p>&copy; 2025 FUJIOKA CONCRETE INDUSTRIES CO., LTD. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
