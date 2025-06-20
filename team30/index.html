@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林屋コンクリート工業株式会社</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      display: flex;
+      background-color: #f5f5f5;
+    }
+    .strength-title {
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+
+    /* サイドナビ */
+    nav {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 30px 20px;
+      box-sizing: border-box;
+    }
+
+   nav h1 {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    /* メインコンテンツ */
+    .main {
+      margin-left: 220px;
+      padding: 40px 30px;
+      flex: 1;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product-item {
+      text-align: center;
+      background: #fafafa;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    .product-item img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .main {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1 style="margin-bottom: 0; text-align: center; font-size: 1.0rem; line-height: 1.4;">
+  林屋コンクリート工業
+</h1>
+<p style="margin: 0 0 30px 0; text-align: center; font-size: 1.0rem; font-weight: bold;">
+  株式会社
+</p>
+  <a href="#about">会社概要</a>
+  <a href="#products">製品紹介</a>
+  <a href="#strengths">当社の強み</a>
+  <a href="#access">アクセス</a>
+  <a href="#contact">お問い合わせ</a>
+</nav>
+
+
+
+<div class="main">
+<div style="position: relative; margin-bottom: 30px;">
+  <img src="extracted_slide1_Picture 2.png" alt="会社全景" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+
+  <div style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
+    padding: 30px 40px;
+    text-align: center;
+    width: 90%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    line-height: 2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    私たちはプレキャストコンクリート製品メーカーです。<br>
+    私たちの役割はお客様に現場打ちや現場加工をさせないことだと考えています。<br>
+    現場はコンクリートが固まるのを待ってはくれない。<br>
+    だから私たちは即納にこだわります。<br>
+    今日在庫を持っている事、そして明日納品出来る事が私たちのこだわりです。
+  </div>
+</div>
+
+
+  <section id="about">
+    <h2>会社概要</h2>
+    <p><strong>会社名：</strong>林屋コンクリート工業株式会社</p>
+  <p><strong>本社・成増工場：</strong>〒175-0094　東京都板橋区成増1-16-12</p>
+  <p><strong>朝霞工場：</strong>〒351-0014　埼玉県朝霞市膝折町4-15-49</p>
+  <p><strong>代表取締役社長：</strong>林 重信</p>
+  <p><strong>事業内容：</strong>集水・雨水・汚水・排水用ます製品、下水道及び水道用製品、雨水浸透用製品、道路用製品など</p>
+  <p><strong>創業：</strong>1929年11月3日</p>
+  <p><strong>資本金：</strong>36,000,000円</p>
+  <p><strong>従業員数：</strong>80人</p>
+  <p><strong>主要取引先：</strong>東京都及び各地方自治体、ゼネコン各社、商社、建材店</p>
+  <p><strong>取引銀行：</strong>りそな銀行 成増支店、みずほ銀行 成増支店、三井住友銀行 成増支店</p>
+</section>
+
+  <section id="products">
+    <h2>製品紹介</h2>
+    <div style="text-align: center; margin-bottom: 30px;">
+    <img src="extracted_slide1_Picture 8.png" alt="製品紹介一覧" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
+</section>
+
+  <section id="strengths">
+  <h2>当社の強み</h2>
+
+  <p class="strength-title">1. この会社の強みや特徴</p>
+  <ul>
+    林屋コンクリート工業株式会社は昭和4年（1929年）創業のコンクリート製品メーカーです。他社を圧倒する「製品数」、独自の生産管理システムにより大半の製品が「受注後最短30分で製造可能」という強みを持ち、業界内でも圧倒的な知名度を誇っています。その強みを活かし安定した経営基盤を持っており、スタッフが長く働ける環境が揃っています。結婚や出産などスタッフのライフステージが変化しても変わらず働き続けることができる会社です。
+  </ul>
+
+  <p class="strength-title">2. 社長の人柄が伝わるエピソード</p>
+  <ul>
+    社長が令和元年春に経済産業省の褒章で藍綬褒章を受章しました。受賞は林重信社長の業界団体理事長という職務を長年に渉り、担ってきた功績を称えられ推薦されたもので生涯を通しても限られた人しか受賞出来ない貴重な褒章です。従業員の健康の為に、トレーニング場、バスケットボール場施設を建て、福利厚生面でも社員に対しての思いが強く、紳士的かつ常に勤勉で誠実、広範囲にわたる人脈を持ち魅力の塊な社長です。
+  </ul>
+
+<h3 style="font-weight: bold; color: #000; font-size: 1.2rem; margin-top: 40px;">★納入実績紹介</h3>
+  <div style="margin-top: 20px;">
+    <img src="extracted_slide2_Picture 4.png" alt="納入実績画像" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+  </div>
+</section>
+
+
+<section id="access">
+  <h2>アクセス</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6472.15223073436!2d139.5769568763592!3d35.7980646725497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e9a609bdb199%3A0x4cadee850ecf97f2!2z5p6X5bGL44Kz44Oz44Kv44Oq44O844OI5bel5qWt77yI5qCq77yJ!5e0!3m2!1sja!2sjp!4v1747464951908!5m2!1sja!2sjp"
+    width="100%"
+    height="450"
+    style="border:0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+  <section id="services">
+ 
+<section id="contact">
+<h2>お問い合わせ</h2>
+<p>電話：03-3939-1122</p>
+<p>FAX：03-3938-5629</p>
+<p style="margin-top: 20px;">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScCyOyG_epHuYD8xU-qVT9rWvpht8h4MxI3qSIoxdXVhUEJQg/viewform" target="_blank" style="font-size: 1.2rem; color: #007BFF; font-weight: bold;">
+      ▶ お問い合わせフォームはこちら
+</a>
+</p>
+</section>
+</section>
+
+  <footer>
+    &copy; Hayashiya Co.
+  </footer>
+</div>
+
+</body>
+</html>
