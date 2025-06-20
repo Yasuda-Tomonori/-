@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>株式会社ユタカ産業</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4e73df, #224abe);
+      color: white;
+      padding: 1.5em 1em;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 0.5em 0 0 0;
+      font-size: 1.2em;
+    }
+
+    .login-btn {
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      background-color: white;
+      color: #224abe;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    nav.global-nav {
+      background: #224abe;
+    }
+
+    nav.global-nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0.5em;
+      gap: 10px;
+    }
+
+    nav.global-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav.global-nav a:hover {
+      background-color: #1b378a;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em 1em;
+    }
+
+    .section {
+      background: white;
+      margin-bottom: 2em;
+      padding: 1.5em;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      border-left: 6px solid #224abe;
+      padding-left: 10px;
+      color: #224abe;
+    }
+
+    .president img {
+      max-width: 200px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .president {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .contact button {
+      background-color: #224abe;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #4e73df;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    @media (max-width: 768px) {
+      .president {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .president img {
+        margin: 0 0 1em 0;
+      }
+
+      nav.global-nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="login-btn" href="login.html">マイページログイン</a>
+    <h1>株式会社ユタカ産業</h1>
+    <p>ホームセンター向けねじ製品販売</p>
+    <img src="bolt_image.png" alt="ねじの画像" style="max-width: 200px; margin-top: 1em;" />
+  </header>
+
+  <nav class="global-nav">
+    <ul>
+      <li><a href="#contact-section">お問い合わせ</a></li>
+      <li><a href="estimate.html">見積依頼</a></li>
+      <li><a href="20250517_1976年創業以来､ねじ､斜勿のパック加工業自動包装機やウェイトチェッカー等を導入_ocred.pdf" download>資料ダウンロード</a></li>
+      <li><a href="stock.html">在庫</a></li>
+      <li><a href="access_softblue.html">アクセス</a></li>
+      <li><a href="ec_sunco_style.html">ECサイト</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <h2>会社概要</h2>
+      <p><strong>所在地：</strong>京都府久世郡久御山町田井新荒見17</p>
+      <p><strong>代表者：</strong>有働豊</p>
+    </div>
+
+    
+    <div class="section president" style="flex-direction: row;">
+      <div>
+        <h2>代表者紹介</h2>
+        <p>映画鑑賞・神社回りが趣味です。</p>
+        <p><strong>創業年：</strong>1976年7月8日</p>
+      </div>
+      <img src="president_suit.png" alt="社長の写真" />
+    </div>
+
+
+    <div class="section">
+      <h2>理念</h2>
+      <p>幅広い商品を確実にご提供し、製品の品質向上のための計画と実行を行っています。</p>
+    </div>
+
+    <div class="section">
+      <h2>強みや特徴</h2>
+      <p>①ホームセンター向けに卸す鋲螺商品をあらゆる形にパッケージ加工することに特化。<br>
+      ②取扱商品３万点。小口梱包仕入先１０社。全国ホームセンターに展開。</p>
+    </div>
+
+    <div class="section">
+      <h2>製品サービス紹介</h2>
+      <p><a href="https://www.youtube.com/watch?v=6-ZHAUsHgJM" target="_blank">▶ ネジ袋詰の動画を見る</a></p>
+      <img src="qr_custom_video.png" alt="動画QRコード" width="150" />
+    </div>
+
+    <div class="section contact" id="contact-section">
+      <h2>お問い合わせ</h2>
+      <form>
+        <label for="name">お名前：</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">メールアドレス：</label>
+        <input type="email" id="email" name="email" />
+        <label for="message">お問い合わせ内容：</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <button type="submit">送信</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 株式会社ユタカ産業</p>
+  </footer>
+</body>
+</html>

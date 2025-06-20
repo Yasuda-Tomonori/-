@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユタカ産業 ECカタログ</title>
+  <style>
+    body {
+      font-family: 'Meiryo', sans-serif;
+      margin: 0;
+      background-color: #f5faff;
+    }
+    header {
+      background-color: #d9f0ff;
+      padding: 10px;
+      border-bottom: 2px solid #87cefa;
+    }
+    header .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+    header .logo {
+      font-size: 24px;
+      color: #007acc;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #007acc;
+      color: white;
+      display: flex;
+      padding: 10px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    aside {
+      width: 220px;
+      background-color: #e0f0ff;
+      padding: 10px;
+    }
+    aside button {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      border: none;
+      background-color: #007acc;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    .banner {
+      background: linear-gradient(90deg, #ffcccb, #fefbd8);
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .banner img {
+      max-width: 150px;
+      width: 100%;
+    }
+    .search-bar {
+      margin: 10px 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 8px;
+      font-size: 16px;
+      min-width: 200px;
+    }
+    .search-bar button {
+      padding: 8px 16px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      aside {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: auto;
+        gap: 10px;
+      }
+      aside button {
+        flex: 1 1 45%;
+        min-width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <span class="logo">ユタカ産業 ECカタログ</span>
+      <span>ようこそ、松下 梅 様</span>
+    </div>
+  </header>
+  <nav>
+    <a href="#">🏠 ホーム</a>
+    <a href="#">🛒 カート[0]</a>
+    <a href="#">⭐ お気に入り[0]</a>
+    <a href="#">📄 見積履歴</a>
+    <a href="#">🔐 ログイン</a>
+  </nav>
+  <div class="container">
+    <aside>
+      <button>小ねじ</button>
+      <button>組込みねじ</button>
+      <button>タッピングねじ</button>
+      <button>いたずら防止ねじ</button>
+      <button>ボルト</button>
+      <button>キャップボルト</button>
+      <button>ドリルねじ</button>
+      <button>ピアス</button>
+      <button>座金</button>
+      <button>六角ナット</button>
+      <button>ナット</button>
+      <button>戻り止めナット</button>
+      <button>ツマミねじ</button>
+      <button>樹脂製品</button>
+    </aside>
+    <main>
+      <div class="banner">
+        <h2>エイトロックワッシャー 径大</h2>
+        <p>ゆるみ止めに最適！</p>
+        <img src="https://via.placeholder.com/150" alt="ワッシャー画像">
+        <p>SUNCOオリジナルワッシャーの新バリエーション登場！</p>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="商品名・型番・キーワードで検索">
+        <button>検索</button>
+      </div>
+      <p>※ このページはデザイン参考用のダミーです。</p>
+    </main>
+  </div>
+  <footer>
+    &copy; 2025 株式会社ユタカ産業
+  </footer>
+</body>
+</html>
