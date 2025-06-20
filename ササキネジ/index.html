@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ササキネジ | ねじ専門商社</title>
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+ font-size: 18px;       /* 文字全体が大きく・読みやすく */
+  line-height: 1.8;      /* 行間を広げてゆったり感を演出 */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('A_digital_graphic_design_of_a_logo_for_Sasaki_Neji.png');
+  background-repeat: repeat;
+  background-size: 200px auto;
+  opacity: 0.055; /* 0.02～0.05で調整可 */
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+
+  section, footer {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+  }
+
+  .hero-with-bg {
+    background-image: url('A_digital_photograph_captures_a_large_assortment_o.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+transition: background-image 1s ease-in-out;  /* ← これを追加 */
+  }
+
+  .hero-with-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .centered-img {
+    display: block;
+    margin: 10px auto;
+    max-width: 720px;
+    width: 100%;
+    height: auto;
+  }
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+}
+.badge-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.header-logo-wrapper {
+  position: relative; /* ← 光のアニメ基準になる親 */
+}
+
+.header-logo {
+  position: absolute; /* ← 左上固定のために必要 */
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+/* ホバー時の拡大アニメーション */
+.header-logo:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.notice-banner {
+  background-color: #fff3cd;
+  border: 2px solid #f1c40f;
+  padding: 20px;
+  margin: 40px auto;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.section-nav {
+  background: linear-gradient(to right, #004080, #007BFF);
+  padding: 12px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-nav a {
+  background-color: white;
+  color: #004080;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.section-nav a:hover {
+  background-color: #e6f0ff;
+  transform: translateY(-2px);
+}
+
+.floating-contact-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #FF5722;
+  color: white;
+  padding: 18px 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1.2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-contact-btn:hover {
+  transform: scale(1.1);
+  background-color: #E64A19;
+}
+
+@keyframes shine {
+  0% { transform: rotate(45deg) translateX(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: rotate(45deg) translateX(200%); opacity: 0; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.header-logo.clicked {
+  animation: bounce 0.4s ease;
+}
+
+.header-logo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(120deg, rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  transform: rotate(45deg);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.header-logo.animate-shine::after {
+  animation: shine 1s ease;
+}
+
+@keyframes shine {
+  0% { transform: rotate(45deg) translateX(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: rotate(45deg) translateX(200%); opacity: 0; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.header-logo.clicked {
+  animation: bounce 0.4s ease;
+}
+
+@keyframes rotate360 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.header-logo.rotating {
+  animation: rotate360 0.6s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .header-logo {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-content {
+    padding-top: 100px; /* ロゴの分、下にずらす */
+  }
+}
+
+.map-container {
+  max-width: 960px;
+  margin: 0 auto; /* 中央寄せ */
+  padding: 10px 0;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<!-- ヒーローセクション -->
+<header class="hero-with-bg">
+<div class="header-logo-wrapper">
+  <img src="A_digital_graphic_design_of_a_logo_for_Sasaki_Neji.png" alt="ササキネジ ロゴ" class="header-logo" />
+ </div>
+  <div class="hero-content">
+    <h1>プロもDIYも大歓迎！<br>ねじ1本から販売可能です</h1>
+    <p>お問合せはお気軽に</p>
+    <a href="#contact"><button>お問合せ</button></a>
+  </div>
+</header>
+
+<!-- ナビゲーションメニュー -->
+<nav class="section-nav">
+  <div class="nav-container">
+    <a href="#about">会社概要</a>
+    <a href="#message">社長挨拶</a>
+    <a href="#warehouse">倉庫の様子</a>
+    <a href="#services">サービス内容</a>
+    <a href="#strength">当社の強み</a>
+    <a href="#contact">お問合せ</a>
+  </div>
+</nav>
+
+
+<!-- 会社概要 -->
+<section id="about">
+  <h2>会社概要</h2>
+  <p><strong>会社名：</strong>ササキネジ</p>
+  <p><strong>代表者：</strong>佐々木 誠一</p>
+  <p><strong>所在地：</strong>〒577-0015 大阪府東大阪市長田２丁目１２−５</p>
+  <p><strong>創業年：</strong>1979年</p>
+  <div class="map">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.11663437258!2d135.58523807619775!3d34.67700568448297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dfeee70baaa9%3A0x2bca952563c161a2!2z44CSNTc3LTAwMTUg5aSn6Ziq5bqc5p2x5aSn6Ziq5biC6ZW355Sw77yS5LiB55uu77yR77yS4oiS77yV!5e0!3m2!1sja!2sjp!4v1747447626682!5m2!1sja!2sjp" width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+</section>
+
+<!-- 社長挨拶 -->
+<section id="message" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+  <div style="flex: 0 0 150px;">
+    <img src="president.png" alt="社長イラスト" style="width: 100%; height: auto; border-radius: 8px;" />
+  </div>
+  <div style="flex: 1; min-width: 250px;">
+    <h2>社長挨拶</h2>
+    <p>
+      ササキネジは「ねじ1本から真心をこめて」を信条に、創業以来地域のお客様とともに<br>歩んでまいりました。
+      現場で求められるスピード、正確性、そして信頼。<br>これらを徹底的に追求することで、多くの皆様にご支持をいただいております。<br>
+      小さなパーツにも、大きな信頼が詰まっています。<br>
+      今後とも皆様の良きパートナーとして、お役に立てる企業を目指して精進してまいります。
+    </p>
+    <p style="text-align: right; font-weight: bold;">代表　佐々木 誠一</p>
+  </div>
+</section>
+
+
+
+<!-- 倉庫写真 -->
+<section id="warehouse">
+  <h2>倉庫の様子</h2>
+  <p>ねじや部品を丁寧に管理・保管しています。現場の信頼感とスピード対応が私たちの強みです。</p>
+  <img src="倉庫画像.png" alt="倉庫の様子（ねじ在庫）" class="centered-img" />
+</section>
+
+<!-- サービス内容 -->
+<section id="services">
+  <h2>製品・サービス内容</h2>
+  <img src="A_screenshot_of_a_Japanese_company_website_for_Sas.png" alt="サービス紹介イメージ" class="centered-img" />
+
+ <div class="badge-container">
+    <div class="badge">多品種・多品目・工具も！</div>
+    <div class="badge">配達可能</div>
+    <div class="badge">即納体制</div>
+    <div class="badge">豊富な在庫</div>
+  </div>
+
+
+ 
+ </section>
+
+<!-- 強み・実績 -->
+<section id="strength">
+  <h2>当社の強み</h2>
+<img src="当社の強み.png" alt="当社の強み" class="centered-img" />
+<section class="notice-banner">
+  その他、細かいご要望にもお応えします！
+</section>
+
+
+<!-- お問合せ -->
+<section id="contact">
+  <h2>お問合せ</h2>
+  <p><strong>電話番号：</strong>06-6785-1222</p>
+  <p><strong>メール：</strong><a href="mailto:sasaki-neji1991@vega.ocn.ne.jp">sasaki-neji1991@vega.ocn.ne.jp</a></p>
+  <p><strong>住所：</strong>〒577-0015 大阪府東大阪市長田２丁目１２−５</p>
+  </section>
+
+<!-- フッター -->
+<footer>
+  <p>&copy; 2025 ササキネジ / 〒577-0015 大阪府東大阪市長田２丁目１２−５ / TEL: 06-6785-1222</p>
+</footer>
+
+<!-- 固定お問合せボタン -->
+<a href="mailto:sasaki-neji1991@vega.ocn.ne.jp?subject=お問合せ&body=以下にご用件をご記入ください。" class="floating-contact-btn" title="お問合せは<br>コチラ！">
+  お問合せ<br>はコチラ
+</a>
+
+<audio id="click-sound" src="door.mp3" preload="auto"></audio>
+
+<script>
+  const logo = document.querySelector('.header-logo');
+  const sound = document.getElementById('click-sound');
+
+  logo.addEventListener('click', () => {
+    if (sound) {
+      sound.currentTime = 0;
+      sound.play().catch(e => {
+        console.log('音が鳴りません:', e);
+      });
+    }
+
+    logo.classList.add('clicked');
+    setTimeout(() => logo.classList.remove('clicked'), 400);
+
+    logo.classList.add('animate-shine');
+    setTimeout(() => logo.classList.remove('animate-shine'), 1000);
+
+    logo.classList.add('rotating');
+    setTimeout(() => logo.classList.remove('rotating'), 600);
+  });
+ // ヘッダー画像自動切り替え処理（ここから追加）
+  const hero = document.querySelector('.hero-with-bg');
+  const images = [
+    'A_digital_photograph_captures_a_large_assortment_o.png',  // 最初の画像
+    'header2.png',
+    'header3.png'
+  ];
+  let currentIndex = 0;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    hero.style.backgroundImage = `url('${images[currentIndex]}')`;
+  }, 5000); // 5秒ごとに切り替え
+
+</script>
+
+
+</body>
+</html>
