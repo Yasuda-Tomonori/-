@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鈴紀商店 | 和歌山のねじ・工具販売</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f8f9fa;
+      /* ✅ 修正済みポインター設定 */
+      cursor: url("bolt_cursor.png") 16 16, auto;
+    }
+
+    header {
+      background: url('IMG_0566.jpeg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      height: 300px;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+      z-index: 0;
+    }
+
+    header h1, header p, .btn {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .btn {
+      background: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    section {
+      background: white;
+      margin: 20px auto;
+      max-width: 960px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #333;
+      border-left: 6px solid #007BFF;
+      padding-left: 12px;
+    }
+
+    .rep-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .rep-row img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #343a40;
+      color: #fff;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .rep-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .rep-row img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>株式会社 鈴紀商店</h1>
+  <p>和歌山で半世紀以上の信頼と実績<br>ねじ・ボルト・工具・高圧ガスの販売</p>
+  <a href="#contact" class="btn">お問い合わせ</a>
+</header>
+
+<section>
+  <h2 class="section-title">会社概要</h2>
+  <p><strong>商号：</strong>株式会社 鈴紀商店（SUZUKI SHOTEN, K.K.）</p>
+  <p><strong>所在地：</strong>〒640-8453 和歌山県和歌山市木ノ本269-5</p>
+  <p><strong>電話番号：</strong>073-455-4806</p>
+  <p><strong>FAX：</strong>073-455-6356</p>
+  <p><strong>設立：</strong>1975年9月（創業：1968年9月）</p>
+  <p><strong>資本金：</strong>3,000万円</p>
+  <p><strong>従業員数：</strong>4名</p>
+  <div class="rep-row">
+    <p><strong>代表者：</strong>鈴木 潮</p>
+    <img src="IMG_0557.jpeg" alt="代表者写真">
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">事業内容</h2>
+  <ul>
+    <li>ねじ・ボルト各種販売</li>
+    <li>工具類販売</li>
+    <li>高圧ガスおよび関連器具販売</li>
+    <li>主要取引先：日本製鉄、日鉄物産、カトウ酸素 ほか</li>
+  </ul>
+</section>
+
+<section>
+  <h2 class="section-title">主な取扱品</h2>
+  <ul>
+    <li>ナット、ボルト、びょう（小売・卸）</li>
+    <li>ねじ（鉄製）</li>
+    <li>各種工具（手道具）</li>
+    <li>高圧ガス（酸素など）</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">お問い合わせ</h2>
+  <p><strong>住所：</strong>〒640-8453 和歌山県和歌山市木ノ本269-5</p>
+  <p><strong>電話：</strong><a href="tel:0734554806">073-455-4806</a></p>
+  <p><strong>メール：</strong><a href="mailto:info@example.com">info@example.com</a></p>
+  <iframe src="https://www.google.com/maps?q=和歌山県和歌山市木ノ本269-5&output=embed"></iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 株式会社 鈴紀商店 | 和歌山県和歌山市木ノ本269-5 | TEL: 073-455-4806</p>
+</footer>
+
+</body>
+</html>
+
