@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>柄沢ボルト工業株式会社</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; max-width: 900px; margin-left: auto; margin-right: auto; scroll-behavior: smooth; }
+    header { text-align: center; background: #2b4c7e; color: white; padding: 30px 20px; position: relative; }
+    h1 { margin: 0; }
+    nav#pageNav {
+      background: #004a99;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav#pageNav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+    nav#pageNav a:hover {
+      background-color: #003366;
+    }
+    img { max-width: 100%; height: auto; border-radius: 8px; }
+    section { margin-top: 40px; }
+    h2 { color: #2b4c7e; border-bottom: 2px solid #2b4c7e; padding-bottom: 5px; }
+    ul { padding-left: 20px; }
+    a.button {
+      display: inline-block;
+      background: #2b4c7e;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    footer { margin-top: 60px; text-align: center; font-size: 0.9em; color: #666; }
+    iframe { width: 100%; height: 300px; border: none; margin-top: 10px; border-radius: 8px; }
+
+    /* 上に戻るボタン */
+    #backToTop {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      background-color: #2b4c7e;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+      text-align: center;
+      line-height: 24px;
+      text-decoration: none;
+      display: block;
+    }
+    #backToTop:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ページトップの目印 -->
+<a id="top"></a>
+
+<header>
+  <h1>柄沢ボルト工業株式会社</h1>
+  <p>ボルト・ナットの専門卸売業</p>
+</header>
+
+<!-- ページ内リンクナビゲーション -->
+<nav id="pageNav">
+  <a href="#company">会社概要</a>
+  <a href="#philosophy">企業理念</a>
+  <a href="#business">事業内容</a>
+  <a href="#contact">お問い合わせ</a>
+</nav>
+
+<section id="philosophy">
+  <h2>企業理念</h2>
+  <p>「信頼の締結、未来への架け橋」<br>
+  ボルト・ナットで社会に信頼を届けます。</p>
+</section>
+
+<section id="company">
+  <h2>会社概要</h2>
+  <ul>
+    <li>所在地：〒170-0013 東京都豊島区東池袋2-7-3 カラサワビル1F</li>
+    <li>創業：1949年</li>
+    <li>資本金：1,000万円</li>
+    <li>従業員数：8名</li>
+    <li>業種：金物卸売業</li>
+  </ul>
+</section>
+
+<section id="strength">
+  <h2>当社の強み</h2>
+  <ul>
+    <li>地域密着の迅速対応でお客様のニーズに柔軟に対応</li>
+    <li>大手メーカーとの長年の取引実績に裏付けられた信頼</li>
+    <li>安定した仕入れルートによる品質・価格の安定供給</li>
+    <li>専門知識を活かした最適な製品提案とサポート</li>
+  </ul>
+</section>
+
+<section id="business">
+  <h2>事業内容</h2>
+  <img src="IMG_0568.jpeg" alt="倉庫とフォークリフト" />
+  <ul>
+    <li>ボルト・ナットの販売（鉄製ねじ含む）</li>
+    <li>主要取引先：小松製作所、日立製作所、トーハツ、関東農機、東陽社</li>
+    <li>仕入先：メタルワン鉄鋼製品販売、佐賀鉄工所、トルク、互省製作所 他</li>
+  </ul>
+</section>
+
+<section id="representative">
+  <h2>代表者紹介</h2>
+  <img src="柄沢ボルト社長.jpeg" alt="代表取締役 柄沢宏親" />
+  <p>代表取締役：柄沢 宏親<br>
+  生年月日：1978年2月9日<br>
+  就任：2012年6月</p>
+</section>
+
+<section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>電話番号：0285-45-0096</p>
+  <p>FAX番号：0285-45-2524</p>
+  <p>メール：<a href="mailto:karabolt@io.ocn.ne.jp">karabolt@io.ocn.ne.jp</a></p>
+  <a href="mailto:karabolt@io.ocn.ne.jp" class="button">メールで問い合わせ</a>
+</section>
+
+<section id="access">
+  <h2>アクセス</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.019253751165!2d139.71790317578166!3d35.72925367257467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188db73f0b11cf%3A0x4212e3d4e94884b2!2z44CSMTcwLTAwMTMg5p2x5Lqs6YO95Y-w5p2x5Yy65p2x5YyF5p2R6aSo77yS5LiB55uu77yR77yV!5e0!3m2!1sja!2sjp!4v1682222222222"
+    allowfullscreen=""
+    loading="lazy"></iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 柄沢ボルト工業株式会社</p>
+  <p>〒170-0013 東京都豊島区東池袋2-7-3 カラサワビル1F</p>
+  <p>電話: 03-3987-3061</p>
+</footer>
+
+<!-- 上に戻るボタン -->
+<a href="#top" id="backToTop" aria-label="ページの先頭へ">↑</a>
+
+</body>
+</html>
