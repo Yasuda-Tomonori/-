@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>株式会社飯塚商店｜ネジ・工具の専門商社</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; background-color: #f7f7f7; }
+    header, footer { background-color: #003366; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #005599; text-align: center; padding: 10px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; display: inline-block; }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      background-color: #004d80;
+    }
+    .hero-text {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-text h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      font-size: 1.1em;
+    }
+    .hero-image {
+      flex: 1;
+      background: url('takasaki.jpg') center/cover no-repeat;
+      clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+      min-height: 300px;
+    }
+    .content { padding: 30px 15px; max-width: 1000px; margin: auto; background-color: white; }
+    .section { margin-bottom: 40px; }
+    h2 { border-bottom: 2px solid #003366; padding-bottom: 10px; font-size: 1.5em; }
+    ul { padding-left: 20px; font-size: 1em; }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .product-card img.tool {
+      object-fit: contain;
+      height: 180px;
+    }
+    .product-card h3 {
+      margin-top: 15px;
+      font-size: 1.1em;
+      color: #003366;
+      white-space: nowrap;
+    }
+    footer p { margin: 5px 0; text-align: center; font-size: 0.9em; }
+    .map-container { margin-top: 20px; text-align: center; }
+    iframe { width: 100%; height: 300px; border: 0; }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #005599;
+      color: white;
+      border: none;
+      padding: 20px 25px;
+      border-radius: 5px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    @media (max-width: 600px) {
+      .hero-text h1 { font-size: 1.5em; }
+      .hero-text p { font-size: 1em; }
+      nav a { margin: 0 8px; font-size: 0.9em; }
+      .product-card img { height: 160px; }
+      #backToTop { padding: 15px 20px; font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑ 上に戻る</button>
+
+  <header>
+    <h1>株式会社飯塚商店</h1>
+    <p>ネジ・工具の専門商社</p>
+  </header>
+
+  <nav>
+    <a href="#products">取扱商品</a>
+    <a href="#about">会社案内</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>ねじ一本から、地域と現場を支える。</h1>
+      <p>未来を支える製品を届ける専門商社</p>
+      <p>高崎市を拠点に、私たちはねじ全般を取り扱っております。お客様の期待を超えるサービスをお約束いたします。どうぞお気軽にお問い合わせください。</p>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+  <div class="content">
+    <section class="section">
+      <h2>当社の強み</h2>
+      <ul>
+        <li>約2万点の在庫から短納期でご提供可能</li>
+        <li>地域密着40年以上の実績</li>
+        <li>小ロット、多品種の対応可能</li>
+      </ul>
+    </section>
+
+    <section id="products" class="section">
+      <h2>取扱商品</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="ねじ全般.png" alt="ネジ全般">
+          <h3>ネジ全般</h3>
+        </div>
+        <div class="product-card">
+          <img src="工具.png" alt="工具" class="tool">
+          <h3>工具</h3>
+        </div>
+        <div class="product-card">
+          <img src="製作加工品.png" alt="製作加工品">
+          <h3 style="font-size: 1.2em;">製作加工品</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>会社案内</h2>
+      <p>株式会社飯塚商店は、群馬県高崎市に拠点を置く、ネジ・工具の専門商社です。創業以来、建築・製造業の皆さまに安心と信頼の商品を提供してまいりました。</p>
+      <ul>
+        <li>代表者名：飯塚隆</li>
+        <li>創業：1939年</li>
+        <li>所在地：群馬県高崎市問屋町1-11-35</li>
+        <li>電話番号：027-363-3611</li>
+        <li>営業時間：平日 9:00〜17:30（土日祝休）</li>
+      </ul>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.498028154412!2d138.9942029151873!3d36.34230098004817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ea3d3e0830c89%3A0x5e3ad5d3de86dcb6!2z44CSMzcwLTAwMDEg576O5a6u55yM6auY55-l5biC5p2-5bSO5qCh5Lmd5Z-O77yR5LiB55uu77yT77yT!5e0!3m2!1sja!2sjp!4v1716015038893!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>お問い合わせ</h2>
+      <p>商品に関するご質問やご注文のご相談は、お電話またはメールよりお気軽にご連絡ください。</p>
+      <p><strong>電話番号：</strong>027-363-3611</p>
+      <p><strong>FAX番号：</strong>027-363-3664</p>
+      <p><strong>メール：</strong><a href="mailto:info@iizuka-shouten.co.jp">info@iizuka-shouten.co.jp</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 株式会社飯塚商店</p>
+    <p>群馬県高崎市問屋町1-11-35</p>
+    <p>電話番号：027-363-3611</p>
+  </footer>
+</body>
+</html>
