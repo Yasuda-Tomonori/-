@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>事業内容 | 株式会社金岩鈴木金物</title>
+  <style>
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("会社.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 34, 68, 0.85);
+      color: #fff;
+      padding: 1.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    header img.logo {
+      width: 80px;
+      height: auto;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin: 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background: rgba(0, 64, 128, 0.9);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: rgba(0, 34, 68, 0.9);
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.92);
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: 2rem auto;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #002244;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    .category {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .category img {
+      width: 75px;
+      height: auto;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .category p {
+      flex: 1;
+      margin: 0;
+    }
+
+    .news {
+      background: #e0f0ff;
+      padding: 2rem 1rem;
+      border-radius: 12px;
+      margin: 2rem auto;
+      max-width: 960px;
+    }
+
+    .news h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .news ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .news li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: rgba(0, 34, 68, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+      }
+
+      .category {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .category img {
+        margin-bottom: 1rem;
+      }
+
+      .category p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="ロゴ.jpg" alt="ロゴ" class="logo">
+    <h1>株式会社金岩鈴木金物</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">トップ</a>
+    <a href="about.html">会社概要</a>
+    <a href="greeting.html">代表挨拶</a>
+    <a href="gallery.html">設備紹介</a>
+    <a href="map.html">アクセス</a>
+    <a href="contact.html">お問い合わせ</a>
+  </nav>
+
+  <section class="category" id="bolt">
+    <h2>ボルト・ナット</h2>
+    <a href="https://nejinara.com/" target="_blank" rel="noopener">
+      <img src="bolt.jpg" alt="ボルトの画像">
+    </a>
+    <p>六角ボルト、アンカーボルト、Uボルト、ナット、座金など、各種サイズ・規格に対応したボルト・ナットを豊富に取り揃えています。建築現場、鉄工所、設備工事など、あらゆる分野のニーズに応える品揃えです。</p>
+  </section>
+
+  <section class="category" id="tool">
+    <h2>建築工具</h2>
+    <a href="https://nejinara.com/" target="_blank" rel="noopener">
+      <img src="tool.jpg" alt="建築工具の画像">
+    </a>
+    <p>電動工具、手工具、大工道具、計測器など、プロの現場で使える建築工具を各種取り扱っております。メーカー品も豊富に取り揃えており、用途や予算に応じた提案も可能です。</p>
+  </section>
+
+  <section class="category" id="fence">
+    <h2>外構金物</h2>
+    <a href="https://nejinara.com/" target="_blank" rel="noopener">
+      <img src="fence.jpg" alt="外構金物の画像">
+    </a>
+    <p>門扉・フェンス・手すり・ポストなどの外構関連製品も取り扱っています。アルミ製品を中心に、多様なデザイン・サイズに対応し、現場に応じた納品が可能です。</p>
+  </section>
+
+  <section class="news">
+    <h2>お知らせ</h2>
+    <ul>
+      <li>2025年5月：ホームページをリニューアルしました。</li>
+      <li>2025年4月：新商品「高耐久ボルト」取り扱い開始。</li>
+      <li>2025年3月：臨時休業のお知らせ（3/21〜3/22）</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 株式会社金岩鈴木金物. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

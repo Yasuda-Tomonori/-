@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>株式会社金岩鈴木金物</title>
+  <style>
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background: #002244;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    header img.logo {
+      width: 50px;
+      height: auto;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    nav {
+      background: #004080;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: #002244;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center center;
+      color: white;
+      text-align: center;
+      padding: 4.2em 2em; /* 高さ約70%に調整 */
+      font-size: 3.6em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+      transition: background-image 1s ease-in-out;
+      position: relative;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      background: white;
+    }
+
+    h2 {
+      color: #002244;
+    }
+
+    footer {
+      background: #002244;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+      }
+
+      header {
+        flex-direction: column;
+      }
+
+      .hero {
+        font-size: 2em;
+        padding: 3em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="ロゴ.jpg" alt="ロゴ" class="logo">
+    <h1>株式会社金岩鈴木金物</h1>
+  </header>
+
+  <nav>
+    <a href="about.html">会社概要</a>
+    <a href="greeting.html">代表挨拶</a>
+    <a href="services.html">事業内容</a>
+    <a href="products.html">取扱商品</a>
+    <a href="gallery.html">設備紹介</a>
+    <a href="map.html">アクセス</a>
+    <a href="contact.html">お問い合わせ</a>
+  </nav>
+
+  <div class="hero" id="hero">
+    <div class="hero-text" id="hero-text">
+      信頼と実績の75年
+    </div>
+  </div>
+
+  <section>
+    <h2>お知らせ</h2>
+    <ul>
+      <li>2025年5月：ホームページをリニューアルしました。</li>
+      <li>2025年4月：新商品「高耐久ボルト」取り扱い開始。</li>
+      <li>2025年3月：臨時休業のお知らせ（3/21〜3/22）</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 株式会社金岩鈴木金物. All rights reserved.</p>
+  </footer>
+
+  <!-- 背景＆テキストスライド用スクリプト -->
+  <script>
+    const hero = document.getElementById('hero');
+    const heroText = document.getElementById('hero-text');
+
+    const slides = [
+      { image: '会社.jpg', text: '信頼と実績の75年' },
+      { image: 'image3.jpeg', text: '金物のことなら任せてください' },
+      { image: '出店.jpg', text: '現場を支える信頼のパートナー' }
+    ];
+
+    let current = 0;
+
+    function updateSlide() {
+      hero.style.backgroundImage = `url('${slides[current].image}')`;
+      heroText.textContent = slides[current].text;
+      current = (current + 1) % slides.length;
+    }
+
+    updateSlide(); // 初期表示
+    setInterval(updateSlide, 5000); // 5秒ごとに更新
+  </script>
+
+</body>
+</html>
