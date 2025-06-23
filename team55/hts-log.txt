@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 23 Jun 2025 14:02:44 at http://team55.local/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://team55.local/ -O1 "C:\My Web Sites\team55" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:04:01	Warning: 	Retry after error -4 (No data (connection closed)) at link team55.local/feed/ (from team55.local/)
+14:04:06	Warning: 	Retry after error -4 (No data (connection closed)) at link team55.local/comments/feed/ (from team55.local/)
+14:04:11	Warning: 	Retry after error -4 (No data (connection closed)) at link team55.local/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2 (from team55.local/)
+14:06:23	Warning: 	Retry after error -4 (No data (connection closed)) at link team55.local/wp-content/uploads/2025/05/スクリーンショット-2025-05-17-151930-3333.png (from team55.local/)
+14:06:27	Warning: 	Retry after error -4 (No data (connection closed)) at link team55.local/wp-content/uploads/2025/05/スクリーンショット-2025-05-17-152712-写真.png (from team55.local/)
+14:06:31	Warning: 	Retry after error -4 (No data (connection closed)) at link team55.local/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2 (from team55.local/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 11 seconds : 24 links scanned, 17 files written (5664219 bytes overall) [5362629 bytes received at 21365 bytes/sec], 362644 bytes transferred using HTTP compression in 6 files, ratio 12%, 1.4 requests per connection
+(No errors, 6 warnings, 0 messages)
