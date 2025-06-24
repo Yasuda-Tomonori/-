@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ハッカソン成果物コンテスト</title>
+  <title>ハッカソン投票ルールと賞一覧</title>
   <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
@@ -13,9 +13,10 @@
       text-align: center;
     }
     .container {
+      /* 背景白を確実に入れる */
+      background-color: #fff;
       max-width: 800px;
       margin: auto;
-      background: white;
       padding: 2em;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -26,27 +27,28 @@
     .section {
       margin-bottom: 2.5em;
     }
-    /* 投票ルールのリストは中央表示 */
     .note-list {
       list-style: inside;
-      margin: 0 auto 1em;
-      padding-left: 0;
+      padding: 0;
+      margin: 0 0 1.5em; /* 下に1.5em余白 */
       max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
       text-align: left;
     }
     .note-list li {
       margin: 0.5em 0;
     }
-    /* リストとボタンを縦並び中央揃え */
     .list-section {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1em;
-      margin-bottom: 1em;
+      margin-bottom: 2em;
     }
     .vote-button {
-      display: inline-block;
+      display: block;
+      width: fit-content;
+      margin: 0 auto 2em; /* 説明文直下に下余白 */
       padding: 1em 2em;
       background-color: #27ae60;
       color: white;
@@ -59,7 +61,9 @@
       background-color: #219150;
     }
     .list-button {
-      display: inline-block;
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
       padding: 0.8em 1.6em;
       background-color: transparent;
       color: #555;
@@ -79,28 +83,36 @@
   <div class="container">
     <h1>🎉 ハッカソン成果物コンテスト</h1>
 
+    <!-- 投票ルール -->
     <div class="section">
       <h2>📮 投票ルール</h2>
       <ul class="note-list">
         <li>全66サイトの中から、「良い」と思った作品を <strong>3つ選んで</strong> 投票してください</li>
         <li><strong>お一人様1回限り</strong>の投票です</li>
+        <li><strong>投票締切：7月4日（金）中</strong></li>
         <li>以下のフォームからアクセスしてください</li>
       </ul>
-      <a class="vote-button" href="https://forms.office.com/r/3pKfRSC6SD" target="_blank">▶ 投票フォームはこちら</a>
+      <a class="vote-button"
+         href="https://forms.office.com/r/3pKfRSC6SD"
+         target="_blank">
+        ▶ 投票フォームはこちら
+      </a>
     </div>
 
-    <div class="section">
+    <!-- 成果物一覧リンク -->
+    <div class="section list-section">
       <h2>📂 成果物一覧ページ</h2>
-      <div class="list-section">
-        <ul class="note-list">
-          <li>以下のリンクから、全作品の閲覧が可能です</li>
-        </ul>
-        <a class="list-button" href="https://yasuda-tomonori.github.io/-/hackathon_list/" target="_blank">
-          📂 成果物一覧ページを見る
-        </a>
-      </div>
+      <ul class="note-list">
+        <li>以下のリンクから、全作品の閲覧が可能です</li>
+      </ul>
+      <a class="list-button"
+         href="https://yasuda-tomonori.github.io/-/hackathon_list/"
+         target="_blank">
+        📂 成果物一覧ページを見る
+      </a>
     </div>
 
+    <!-- 賞一覧 -->
     <div class="section">
       <h2>🏆 表彰される賞一覧</h2>
       <ul class="note-list">
@@ -110,6 +122,7 @@
       </ul>
     </div>
 
+    <!-- その他注意事項 -->
     <div class="section">
       <h2>💡 その他の注意事項</h2>
       <ul class="note-list">
