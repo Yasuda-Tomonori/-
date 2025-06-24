@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ハッカソン投票ルールと賞一覧</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to right, #f4f4f4, #e8f8f5);
+      margin: 0;
+      padding: 2em;
+      color: #333;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 2.5em;
+    }
+    /* 投票ルールのリストは中央表示 */
+    .note-list {
+      list-style: inside;
+      margin: 0 auto 1em;
+      padding-left: 0;
+      max-width: 600px;
+      text-align: left;
+    }
+    .note-list li {
+      margin: 0.5em 0;
+    }
+    /* リストとボタンを縦並び中央揃え */
+    .list-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      margin-bottom: 1em;
+    }
+    .vote-button {
+      display: inline-block;
+      padding: 1em 2em;
+      background-color: #27ae60;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .vote-button:hover {
+      background-color: #219150;
+    }
+    .list-button {
+      display: inline-block;
+      padding: 0.8em 1.6em;
+      background-color: transparent;
+      color: #555;
+      font-weight: bold;
+      border: 2px solid #aaa;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: color 0.3s, border-color 0.3s;
+    }
+    .list-button:hover {
+      color: #333;
+      border-color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 ハッカソン成果物コンテスト</h1>
+
+    <div class="section">
+      <h2>📮 投票ルール</h2>
+      <ul class="note-list">
+        <li>全66サイトの中から、「良い」と思った作品を <strong>3つ選んで</strong> 投票してください</li>
+        <li><strong>お一人様1回限り</strong>の投票です</li>
+        <li>以下のフォームからアクセスしてください</li>
+      </ul>
+      <a class="vote-button" href="https://forms.office.com/r/3pKfRSC6SD" target="_blank">▶ 投票フォームはこちら</a>
+    </div>
+
+    <div class="section">
+      <h2>📂 成果物一覧ページ</h2>
+      <div class="list-section">
+        <ul class="note-list">
+          <li>以下のリンクから、全作品の閲覧が可能です</li>
+        </ul>
+        <a class="list-button" href="https://yasuda-tomonori.github.io/-/hackathon_list/" target="_blank">
+          📂 成果物一覧ページを見る
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🏆 表彰される賞一覧</h2>
+      <ul class="note-list">
+        <li><strong>最優秀賞（1作品）</strong>：得票数1位のサイトに授与</li>
+        <li><strong>優秀賞（2〜3位）</strong>：得票数上位の作品を表彰（同票多数時はすべて表彰の可能性あり）</li>
+        <li><strong>瞬間火力賞（複数チーム）</strong>：5作品以上を提出したチームに贈呈（現在2チーム該当）</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>💡 その他の注意事項</h2>
+      <ul class="note-list">
+        <li>結果は後日、社内ポータルや全体会議等で発表します</li>
+        <li>得票数やコメントは匿名集計とし、個人名の公表は行いません</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
